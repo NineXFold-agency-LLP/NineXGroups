@@ -253,6 +253,21 @@ export default function Footer() {
                 </li>
               </ul>
             </AccordionSection>
+
+            <AccordionSection title="Healthcare">
+              <ul className="space-y-3">
+                <li>
+                  <a
+                    href="https://ninexcoria.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex w-full items-center justify-between text-[13px] leading-[1.5] tracking-[-0.01em] text-gray-400 hover:text-white transition-colors py-1.5"
+                  >
+                    <span className="text-left w-full">Coria</span>
+                  </a>
+                </li>
+              </ul>
+            </AccordionSection>
           </div>
 
           {/* ================= CAREERS + INSIGHTS ================= */}
