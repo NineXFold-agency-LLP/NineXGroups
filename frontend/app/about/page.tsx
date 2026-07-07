@@ -7,7 +7,6 @@ import BrandsSection from "@/components/pages/BrandsSection";
 import HowWeWorkSection from "@/components/pages/HowWeWorkSection";
 import WhyChooseUsSection from "@/components/pages/WhyChooseUsSection";
 import GlobalPresenceSection from "@/components/pages/GlobalPresenceSection";
-import LeadershipSection from "@/components/pages/LeadershipSection";
 
 import { UserRound, GitBranch, Layers3, Target } from "lucide-react";
 
@@ -110,28 +109,6 @@ export default function About() {
           { name: "EMEA" },
           { name: "APAC" },
           { name: "India" },
-        ]}
-      />
-      <LeadershipSection
-        title="Built by leaders."
-        subtitle="Focused on impact."
-        leaders={[
-          {
-            name: "Pratyush Nayak",
-            role: "Founder & CEO",
-            image:
-              "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800",
-            description:
-              "Visionary leader focused on growth strategy, client success, and building high-performing teams.",
-          },
-          {
-            name: "Prabhash Nayak",
-            role: "Co-Founder & CTO",
-            image:
-              "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800",
-            description:
-              "Technology leader passionate about engineering excellence, innovation, and scalable platforms.",
-          },
         ]}
       />
     </main>

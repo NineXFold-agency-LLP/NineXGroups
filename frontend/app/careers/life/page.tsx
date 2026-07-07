@@ -19,7 +19,7 @@ const stats = [
   ["6", "sub-brands, one team"],
   ["1", "shared mission"],
   ["Indore", "our home base"],
-  ["20+", "clients across the globe"],
+  ["200+", "clients across the globe"],
 ];
 
 const pillars = [
