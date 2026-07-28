@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import type { ComponentType, ReactNode, SVGProps } from "react";
 
@@ -297,11 +298,13 @@ function WorkTogether() {
 
           {/* center */}
           <div className="absolute left-1/2 top-[105px] flex h-[130px] w-[130px] -translate-x-1/2 flex-col items-center justify-center rounded-full text-center" style={{ background: "#0F1B3A" }}>
-            <svg viewBox="0 0 100 100" className="h-8 w-8">
-              <defs><linearGradient id="lx" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#5B7CFF" /><stop offset="1" stopColor="#3A1FC0" /></linearGradient></defs>
-              <path d="M26 18 L74 82" stroke="url(#lx)" strokeWidth="16" strokeLinecap="round" />
-              <path d="M74 18 L26 84" stroke="url(#lx)" strokeWidth="16" strokeLinecap="round" />
-            </svg>
+            <Image
+              src="/ninex.png"
+              alt="NineXGroup"
+              width={40}
+              height={40}
+              className="h-8 w-8 rounded-md object-contain"
+            />
             <p className="mt-1.5 px-3 text-[11px] font-semibold leading-[1.35] text-white">Better Outcomes. Stronger Together.</p>
           </div>
         </div>
@@ -461,23 +464,21 @@ export default function LeadershipSection() {
             </p>
           </Reveal>
 
-          {/* X watermark */}
-          <motion.svg
-            viewBox="0 0 100 100"
+          {/* NineX watermark */}
+          <motion.div
             className="pointer-events-none absolute right-2 top-0 hidden h-52 w-52 lg:block"
             animate={reduce ? {} : { y: [0, -10, 0] }}
             transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
             aria-hidden
           >
-            <defs>
-              <linearGradient id="wm" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stopColor="#C7D2F7" />
-                <stop offset="1" stopColor="#E7EBF8" />
-              </linearGradient>
-            </defs>
-            <path d="M24 16 L82 84" stroke="url(#wm)" strokeWidth="16" strokeLinecap="round" />
-            <path d="M82 16 L24 84" stroke="url(#wm)" strokeWidth="16" strokeLinecap="round" />
-          </motion.svg>
+            <Image
+              src="/ninex.png"
+              alt=""
+              width={208}
+              height={208}
+              className="h-full w-full rounded-2xl object-contain opacity-25"
+            />
+          </motion.div>
         </div>
 
         {/* body */}

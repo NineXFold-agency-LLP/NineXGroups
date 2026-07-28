@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "@/app/ninexFoldServices/OurVision";
 import ValuesSection from "@/app/ninexFoldServices/ValuesSection";
@@ -9,19 +10,41 @@ import {
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
 
+export const metadata: Metadata = {
+  title: "AI Automation | Content Engines, Sales Outreach & Workflow AI | NineXFold",
+  description:
+    "Deploy enterprise AI and automation that multiplies marketing output, accelerates lead response, and cuts operating cost — without adding headcount. Schedule an AI Automation Assessment.",
+  keywords: [
+    "AI automation",
+    "marketing AI",
+    "sales automation",
+    "AI content engine",
+    "GEO generative engine optimisation",
+    "workflow automation",
+    "conversational AI",
+    "predictive analytics",
+    "NineXFold",
+  ],
+  openGraph: {
+    title: "AI Automation | NineXFold",
+    description:
+      "Enterprise AI that multiplies content, accelerates sales outreach, and eliminates operational drag at scale.",
+  },
+};
+
 const metricGroups = [
   {
     icon: <AlertTriangle size={22} strokeWidth={1.5} />,
     title: "Challenge",
     items: [
-      ["8", "different CRM systems and disconnected data"],
-      ["50%", "forecast accuracy missing quarterly targets"],
-      ["0", "unified customer view across products"],
-      ["180D", "sales cycles increasing and win rates declining"],
-      ["BLIND", "executive team lacking revenue visibility"],
+      ["12H", "average lead response time losing hot inbound"],
+      ["3X", "content demand exceeding team capacity"],
+      ["40%", "of marketing hours spent on manual busywork"],
+      ["LOW", "personalisation limited to basic merge fields"],
+      ["GAP", "no AI systems connecting content, CRM, and sales"],
     ],
     footerTitle: "BUSINESS PAIN",
-    footerText: "FRAGMENTED. DISCONNECTED.",
+    footerText: "MANUAL. SLOW. CONSTRAINED.",
     showArrow: true,
   },
 
@@ -29,14 +52,14 @@ const metricGroups = [
     icon: <Cpu size={22} strokeWidth={1.5} />,
     title: "Solution",
     items: [
-      ["CRM", "Unified Salesforce Revenue Cloud platform"],
-      ["AI", "Clari predictive forecasting and analytics"],
-      ["GONG", "Conversation intelligence and coaching"],
-      ["DATA", "Custom attribution and waterfall reporting"],
-      ["LIVE", "Executive dashboards with real-time visibility"],
+      ["AI", "Brand-trained content engine across channels"],
+      ["OUT", "Clay + Instantly personalised outbound at scale"],
+      ["CHAT", "WhatsApp and conversational AI for instant response"],
+      ["FLOW", "Make / n8n workflow automation across MarTech"],
+      ["GEO", "Generative engine optimisation for AI search"],
     ],
     footerTitle: "IMPLEMENTED SYSTEMS",
-    footerText: "CONNECTED. INTELLIGENT.",
+    footerText: "AUTOMATED. INTELLIGENT.",
     showArrow: false,
   },
 
@@ -44,18 +67,19 @@ const metricGroups = [
     icon: <TrendingUp size={22} strokeWidth={1.5} />,
     title: "Results",
     items: [
-      ["95%", "forecast accuracy improvement"],
-      ["$300M", "revenue impact in year one"],
-      ["60%", "faster sales cycles"],
-      ["40%", "larger average deal sizes"],
-      ["95%", "sales adoption within 30 days"],
-      ["3M", "ROI realization timeline"],
+      ["10X", "content volume without added headcount"],
+      ["<5M", "average inbound lead response time"],
+      ["55%", "reduction in manual marketing ops cost"],
+      ["3X", "qualified meetings from AI-assisted outreach"],
+      ["40%", "faster campaign launch cycles"],
+      ["6M", "payback on automation investment"],
     ],
     footerTitle: "BUSINESS OUTCOMES",
     footerText: "MEASURABLE. SCALABLE.",
     showArrow: false,
   },
 ];
+
 const cards = [
   {
     title: "AI Content Engine",
@@ -143,7 +167,7 @@ export default function Page() {
     <>
       <SubPageHero
         backgroundImage="/images/bg-image/Fold-bg.png"
-        headline="AUTOMATE. ACCELERATE. SCALE. INFINITELY."
+        headline="Automate marketing and sales so your organisation scales without headcount"
         subheadline="Enterprise AI and automation infrastructure that multiplies your marketing output, accelerates sales velocity, and eliminates operational inefficiency — without increasing headcount.
 We implement AI content engines, intelligent outreach systems, workflow automation, GEO optimisation, predictive analytics, and creative intelligence platforms that make your entire organisation operate faster, smarter, and at a scale that was previously impossible without enterprise budgets."
       />

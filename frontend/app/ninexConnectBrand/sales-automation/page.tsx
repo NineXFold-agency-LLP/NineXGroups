@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "../OurVision";
 import ValuesSection from "../ValuesSection";
@@ -9,153 +10,149 @@ import {
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
 
+export const metadata: Metadata = {
+  title: "Sales Automation | Outreach, Sequences & Pipeline Velocity | NineXConnect",
+  description:
+    "Design and implement sales automation and engagement platforms that multiply rep productivity, accelerate follow-up, and fill pipeline systematically. Request a Sales Automation Demo.",
+  keywords: [
+    "sales automation",
+    "sales engagement",
+    "Outreach",
+    "SalesLoft",
+    "cadence automation",
+    "lead routing",
+    "NineXConnect",
+  ],
+  openGraph: {
+    title: "Sales Automation | NineXConnect",
+    description:
+      "Sales automation that accelerates pipeline — engagement platforms, sequences, and intelligent routing.",
+  },
+};
+
 const metricGroups = [
   {
     icon: <BarChart3 size={22} strokeWidth={1.5} />,
-    title: "Client Success Story",
+    title: "Challenge",
     items: [
-      ["10,000+", "IoT sensors deployed across production operations"],
-      ["45", "production lines connected through real-time monitoring"],
-      ["95%", "failure prediction accuracy through ML models"],
-      ["Industry\n4.0", "lighthouse facility recognition by WEF"],
+      ["2H", "average lead response time"],
+      ["30%", "of leads never receiving follow-up"],
+      ["SPREAD", "outreach living in individual inboxes"],
+      ["LOW", "touches per prospect per week"],
+      ["BLIND", "managers lacking activity visibility"],
     ],
-    footerTitle: "INDUSTRIAL IOT TRANSFORMATION",
-    footerText: "PREDICTIVE. CONNECTED.",
+    footerTitle: "SALES DRAG",
+    footerText: "MANUAL. INCONSISTENT.",
     showArrow: true,
   },
   {
     icon: <SlidersHorizontal size={22} strokeWidth={1.5} />,
-    title: "Operational Results",
+    title: "Solution",
     items: [
-      ["40%", "reduction in unplanned downtime"],
-      ["$32M", "annual savings from predictive maintenance"],
-      ["60%", "faster quality inspection processes"],
-      ["$80M", "total annual savings across operations"],
+      ["ENG", "Outreach / SalesLoft engagement platform"],
+      ["SEQ", "Multi-channel cadence automation"],
+      ["ROUTE", "Intelligent lead routing rules"],
+      ["CRM", "Bi-directional CRM activity sync"],
+      ["AI", "Conversation intelligence coaching"],
+      ["4M", "rollout and enablement"],
     ],
-    footerTitle: "MEASURABLE IMPACT",
-    footerText: "INTELLIGENT. EFFICIENT.",
+    footerTitle: "AUTOMATED SELLING",
+    footerText: "SYSTEMATIC. SCALABLE.",
     showArrow: false,
   },
   {
     icon: <User size={22} strokeWidth={1.5} />,
-    title: "Technology Infrastructure",
+    title: "Results",
     items: [
-      ["AWS\nIoT", "enterprise sensor data ingestion platform"],
-      ["Computer\nVision", "automated quality inspection system"],
-      ["Digital\nTwin", "real-time production simulation and optimisation"],
-      ["Real-Time\nDashboards", "live operational visibility for plant management"],
+      ["70%", "reduction in manual data entry"],
+      ["50%", "more prospect touches per rep"],
+      ["35%", "increase in meeting conversion"],
+      ["40%", "faster lead response times"],
+      ["25%", "higher pipeline creation"],
+      ["5M", "ROI realization"],
     ],
-    footerTitle: "SMART MANUFACTURING",
-    footerText: "AUTOMATED. SCALABLE.",
+    footerTitle: "SALES IMPACT",
+    footerText: "FASTER. CONSISTENT.",
     showArrow: false,
   },
 ];
+
 const cards = [
   {
-    title: "IoT Platform Architecture & Implementation",
+    title: "Sales Engagement Platforms",
     highlight:
-      "The complete connected device infrastructure from sensor to cloud analytics",
+      "Outreach, SalesLoft, Groove, and Apollo configured for your motion",
     description:
-      "We design and implement enterprise IoT platforms using AWS IoT, Azure IoT Hub, Google Cloud IoT, PTC ThingWorx, Siemens MindSphere, and custom architectures — covering device connectivity, protocol management across MQTT, AMQP, OPC-UA, and Modbus, data ingestion at scale, device management, security, and the cloud connectivity that makes every sensor reading analytically accessible within seconds of capture.",
+      "We implement sales engagement platforms with email cadences, call workflows, LinkedIn touches, task automation, and CRM sync — so every rep runs a consistent, measurable outbound and follow-up process.",
   },
-
   {
-    title: "Industrial IoT for Manufacturing",
+    title: "Multi-Channel Sequence Design",
     highlight:
-      "Smart factory implementation that transforms operational data into operational excellence",
+      "The right message, on the right channel, at the right time",
     description:
-      "We implement Industrial IoT systems for manufacturing covering production monitoring, OEE measurement, quality sensor integration, energy consumption monitoring, environmental compliance tracking, and the real-time operational dashboards that give plant managers immediate visibility into every production metric. Industry 4.0 manufacturing is not a concept — it is a set of specific technologies we implement to specific operational outcomes.",
+      "We design and build multi-channel sequences across email, phone, and social — with personalization tokens, A/B testing, and trigger-based branching that adapt to prospect behavior.",
   },
-
   {
-    title: "Predictive Maintenance Systems",
+    title: "Lead Routing & Assignment Automation",
     highlight:
-      "Prevent equipment failure before it happens — using the data the equipment itself generates",
+      "Get every lead to the right owner in seconds",
     description:
-      "We build predictive maintenance platforms covering vibration analysis, thermal monitoring, motor current signature analysis, acoustic emission monitoring, and the ML models trained on equipment sensor data that predict failure hours or days before it occurs — reducing unplanned downtime by 50%, maintenance costs by 30%, and spare parts inventory by 40% through the shift from reactive and scheduled maintenance to condition-based prediction.",
+      "We implement LeanData and native CRM routing with territory, capacity, and round-robin rules — eliminating lead leakage and delayed response.",
   },
-
   {
-    title: "Digital Twin Development",
+    title: "Activity Capture & Pipeline Hygiene",
     highlight:
-      "A real-time virtual replica of every physical asset, process, and facility you operate",
+      "Automatic logging so CRM stays complete without admin burden",
     description:
-      "We design and build digital twin implementations — from individual asset twins for critical equipment through process twins for production lines and facility twins for complete buildings and campuses — using Azure Digital Twins, AWS IoT TwinMaker, and custom platforms. Digital twins enable the simulation, optimisation, and predictive analysis of physical operations without the cost and risk of experimenting on the physical assets themselves.",
+      "We automate email, call, and meeting capture so managers get accurate activity and pipeline data without forcing reps into busywork.",
   },
-
   {
-    title: "Edge Computing Infrastructure",
+    title: "Meeting Scheduling & Calendar Automation",
     highlight:
-      "Process data where it is generated — not after a round trip to the cloud",
+      "Remove friction between interest and booked conversation",
     description:
-      "We design and deploy edge computing infrastructure using AWS Greengrass, Azure IoT Edge, and custom edge platforms — processing sensor data, running ML inference, executing control logic, and storing operational data at the edge of your network where latency, bandwidth, and connectivity requirements make cloud-only processing impractical. Edge computing is essential for manufacturing automation, autonomous vehicles, remote operations, and any use case where millisecond response time is a requirement.",
+      "We implement scheduling tools and workflows that convert replies into meetings instantly — with reminders, no-show recovery, and CRM opportunity creation.",
   },
-
   {
-    title: "Smart Building & Facilities Management",
+    title: "Sales Content & Enablement Automation",
     highlight:
-      "Connect every building system into one intelligent facilities management platform",
+      "Put the right collateral in every sequence and deal stage",
     description:
-      "We implement smart building IoT platforms covering HVAC and environmental monitoring, energy management and optimisation, occupancy sensing and space utilisation, security system integration, predictive maintenance for building equipment, and the sustainability reporting infrastructure that tracks carbon, energy, and water consumption against corporate sustainability targets.",
-  },
-
-  {
-    title: "Supply Chain Visibility & Asset Tracking",
-    highlight:
-      "Know where every asset, every shipment, and every vehicle is at every moment",
-    description:
-      "We implement supply chain visibility platforms and asset tracking systems using GPS, RFID, BLE, and cellular connectivity — providing real-time location, condition, and custody information for every asset in your supply chain. Track vehicles, shipping containers, high-value equipment, pharmaceutical cold chain, and any other asset where location and condition visibility has commercial or compliance value.",
-  },
-
-  {
-    title: "IoT Data Platform & Analytics",
-    highlight:
-      "Transform billions of sensor readings into operational intelligence",
-    description:
-      "We build the IoT data platforms that store, process, and analyse the massive data volumes that connected device networks generate — using time-series databases including InfluxDB and TimescaleDB, streaming analytics with Apache Kafka and Flink, and the BI and AI layers that transform raw telemetry into operational dashboards, predictive models, and automated control decisions.",
-  },
-
-  {
-    title: "IoT Security Architecture",
-    highlight:
-      "Secure every connected device in your network — at the scale IoT deployments demand",
-    description:
-      "We implement IoT security frameworks covering device identity and authentication, encrypted communications, secure firmware update mechanisms, network segmentation, anomaly detection, and the vulnerability management processes that keep thousands or millions of connected devices secure against the expanding attack surface they create. IoT security is fundamentally different from IT security and requires specialised architecture and tooling.",
+      "We connect content libraries, proposal tools, and engagement platforms so reps send approved, tracked assets — and leadership sees what content actually converts.",
   },
 ];
+
 export default function Page() {
   return (
     <>
       <SubPageHero
         backgroundImage="/images/bg-image/Connect-bg.png"
-        headline="SALES AUTOMATION & ENHANCEMENT PLATFORMS"
-        subheadline="We design and implement sales automation and enhancement platforms that accelerate revenue growth, improve sales efficiency, and deliver measurable improvements in sales productivity.
-                      Salesforce, HubSpot, Dynamics 365, Zoho, Pega, and custom sales automation platforms are the central nervous system of modern sales operations — and we engineer these platforms to align with your specific sales processes, revenue models, and go-to-market strategies.
-                    "
+        headline="Sales automation that multiplies touches and closes gaps in follow-up"
+        subheadline="We design and implement sales engagement and automation platforms that give every rep systematic outreach, instant routing, and CRM-synced activity — so pipeline fills consistently without adding headcount."
       />
       <OurVision
         eyebrow="OUR VISION"
         leftTitle={[
-          "CONNECTED.",
-          "SECURED.",
-          "INTELLEGENCE",
-          "WINS.",
+          "REACH.",
+          "ENGAGE.",
+          "CONVERT.",
+          "REPEAT.",
         ]}
-        title="A future where every physical asset in every enterprise is continuously monitored, continuously optimised, and continuously improving — without human intervention for anything the machines can manage themselves."
-        description="The physical world is becoming digital. Every machine, every vehicle, every building, and every product is becoming a data source. The enterprises that build the infrastructure to capture, process, and act on that data will make better operational decisions, prevent more failures, waste fewer resources, and improve faster than those that are still managing physical operations without digital intelligence."
+        title="A sales motion that runs as a system, not a collection of personal habits."
+        description="NineXConnect builds sales automation ecosystems — engagement platforms, cadences, routing, activity capture, and enablement — that transform inconsistent outreach into predictable pipeline creation and faster conversion."
         image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
         eyebrow="OUR VALUES"
-        title="The principles behind every IoT system we architect."
-        description="IoT infrastructure built without principles generates data nobody acts on and devices nobody can secure. Every engagement we take on is grounded in these four commitments to ensure what we build is actionable, resilient, secure by design, and proven before it scales."
-        quote="Sensor Data is Only Valuable at the Point of Action"
-        quoteDescription="Raw sensor readings are not insight. We build the complete data pipeline — from sensor to model to automated action or human alert — ensuring every data point captured drives a specific operational decision."
+        title="The principles behind every sales automation we deploy."
+        description="Automation without relevance becomes spam. Every sequence and workflow is designed for buyer experience and measurable conversion."
+        quote="Systemize the Follow-Up"
+        quoteDescription="The deals you lose are often the ones you never followed up. We build automation that makes persistence consistent — and personalization scalable."
         tags={[
-          "Action",
-          "Intelligence",
-          "Outcome",
+          "Velocity",
+          "Consistency",
+          "Pipeline",
         ]}
         image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
       />

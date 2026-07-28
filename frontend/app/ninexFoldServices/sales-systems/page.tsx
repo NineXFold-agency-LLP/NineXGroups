@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "@/app/ninexFoldServices/OurVision";
 import ValuesSection from "@/app/ninexFoldServices/ValuesSection";
@@ -9,19 +10,40 @@ import {
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
 
+export const metadata: Metadata = {
+  title: "Sales Systems | CRM, CPQ & Sales Automation | NineXFold",
+  description:
+    "Implement CRM and sales automation platforms that give reps the tools they need, managers the visibility they require, and executives the confidence they demand. Request a Sales Systems Demo.",
+  keywords: [
+    "sales systems",
+    "CRM implementation",
+    "Salesforce Sales Cloud",
+    "sales automation",
+    "CPQ",
+    "sales engagement",
+    "Gong",
+    "NineXFold",
+  ],
+  openGraph: {
+    title: "Sales Systems | NineXFold",
+    description:
+      "Sales systems that accelerate pipeline and close deals faster — CRM, automation, CPQ, and sales intelligence.",
+  },
+};
+
 const metricGroups = [
   {
     icon: <AlertTriangle size={22} strokeWidth={1.5} />,
     title: "Challenge",
     items: [
-      ["8", "different CRM systems and disconnected data"],
-      ["50%", "forecast accuracy missing quarterly targets"],
-      ["0", "unified customer view across products"],
-      ["180D", "sales cycles increasing and win rates declining"],
-      ["BLIND", "executive team lacking revenue visibility"],
+      ["40%", "user adoption on legacy CRM"],
+      ["85%", "of sales data living in spreadsheets"],
+      ["0", "visibility into pipeline health"],
+      ["3-5D", "manual quote process"],
+      ["SLOW", "losing deals to faster competitors"],
     ],
-    footerTitle: "BUSINESS PAIN",
-    footerText: "FRAGMENTED. DISCONNECTED.",
+    footerTitle: "SALES FRICTION",
+    footerText: "MANUAL. INVISIBLE.",
     showArrow: true,
   },
 
@@ -29,14 +51,14 @@ const metricGroups = [
     icon: <Cpu size={22} strokeWidth={1.5} />,
     title: "Solution",
     items: [
-      ["CRM", "Unified Salesforce Revenue Cloud platform"],
-      ["AI", "Clari predictive forecasting and analytics"],
-      ["GONG", "Conversation intelligence and coaching"],
-      ["DATA", "Custom attribution and waterfall reporting"],
-      ["LIVE", "Executive dashboards with real-time visibility"],
+      ["SFDC", "Salesforce Sales Cloud implementation"],
+      ["CPQ", "Salesforce CPQ for configure-price-quote"],
+      ["ROUTE", "LeanData for lead routing and assignment"],
+      ["GONG", "Conversation intelligence"],
+      ["ERP", "Custom integration with ERP system"],
     ],
-    footerTitle: "IMPLEMENTED SYSTEMS",
-    footerText: "CONNECTED. INTELLIGENT.",
+    footerTitle: "SALES STACK",
+    footerText: "AUTOMATED. CONNECTED.",
     showArrow: false,
   },
 
@@ -44,89 +66,61 @@ const metricGroups = [
     icon: <TrendingUp size={22} strokeWidth={1.5} />,
     title: "Results",
     items: [
-      ["95%", "forecast accuracy improvement"],
-      ["$300M", "revenue impact in year one"],
-      ["60%", "faster sales cycles"],
-      ["40%", "larger average deal sizes"],
-      ["95%", "sales adoption within 30 days"],
-      ["3M", "ROI realization timeline"],
+      ["95%", "user adoption within 60 days"],
+      ["80%", "time savings on quote generation"],
+      ["45%", "increase in pipeline visibility"],
+      ["30%", "shorter sales cycles"],
+      ["$150M", "incremental revenue in year one"],
+      ["4M", "ROI realization"],
     ],
     footerTitle: "BUSINESS OUTCOMES",
-    footerText: "MEASURABLE. SCALABLE.",
+    footerText: "FASTER. SCALABLE.",
     showArrow: false,
   },
 ];
+
 const cards = [
   {
-    title: "CRM Implementation & Configuration",
+    title: "CRM Implementation & Optimization",
     highlight:
-      "Your CRM is your single source of truth — build it right",
+      "Salesforce, Dynamics 365, and HubSpot built around how your team sells",
     description:
-      "We implement and configure CRM platforms including Salesforce, HubSpot, Pipedrive, and Zoho to precisely mirror your sales process, deal stages, and reporting requirements. Every field, workflow, automation, and dashboard is built to serve your team, not fight them. Implementation is followed by team onboarding, adoption monitoring, and 90-day optimisation support.",
+      "We implement Sales Cloud, CPQ, Revenue Cloud, Dynamics 365 Sales, and HubSpot Sales Hub — with custom objects, process automation, data migration, mobile optimization, user training, and change management. Outcomes: 50% higher sales productivity, 95%+ adoption, and 60% less admin time.",
   },
-
   {
-    title: "Sales Automation & Sequencing",
+    title: "Sales Automation & Engagement",
     highlight:
-      "Your best sales rep, working 24 hours a day",
+      "More touches, faster follow-up, less manual work",
     description:
-      "We build multi-channel sales automation sequences across email, LinkedIn, phone, and SMS — personalised, timed, and triggered by prospect behaviour. Automated follow-ups, task reminders, meeting scheduling, and deal stage progression eliminate the manual work that kills pipeline velocity and lets your team focus entirely on closing.",
+      "We implement Outreach, SalesLoft, Groove, and related platforms for email cadences, multi-channel outreach, activity capture, meeting scheduling, and content tracking — plus intelligent lead routing, nurture sequences, and opportunity stage workflows. Results: 70% less manual data entry and 35% higher meeting conversion.",
   },
-
   {
-    title: "Pipeline Management & Velocity",
+    title: "Configure-Price-Quote (CPQ)",
     highlight:
-      "Control what happens at every stage",
+      "Accurate quotes in hours, not days",
     description:
-      "We design and implement pipeline frameworks with defined entry criteria, exit criteria, stage-specific activities, and conversion benchmarks at every level. Bottlenecks are identified and eliminated. Stage conversion rates are tracked in real time. Deal velocity is monitored and improved continuously so revenue targets are predictable, not accidental.",
+      "We implement Salesforce CPQ, DealHub, Apttus, and related CPQ systems — product catalogs, pricing rules, discount approvals, quote templates, proposal automation, and ERP/billing integration. Guided selling and quote-to-contract automation deliver 60% faster quotes and 95% quote accuracy.",
   },
-
   {
-    title: "Lead Scoring & Qualification Systems",
+    title: "Sales Intelligence & Enrichment",
     highlight:
-      "Stop chasing the wrong leads",
+      "Know who to call, when to call, and why they will buy",
     description:
-      "We build behavioural and demographic lead scoring models that automatically identify, score, and prioritise the highest-intent prospects in your pipeline. Sales teams focus their energy on the leads most likely to close. Marketing knows exactly which activities produce the highest-quality pipeline. Both teams win.",
+      "We implement ZoomInfo, LinkedIn Sales Navigator, 6sense, and enrichment stacks — account/contact enrichment, intent data, firmographics, technographics, buying signals, and competitive alerts. Outcomes: 50% more qualified leads identified and 30% shorter sales cycles.",
   },
-
   {
-    title: "Sales Enablement Infrastructure",
+    title: "Conversation & Revenue Intelligence",
     highlight:
-      "Give your team everything they need to close",
+      "Learn from every call and forecast with confidence",
     description:
-      "We build the complete sales enablement system, including battlecards, objection handling frameworks, competitive intelligence documents, proposal templates, case study libraries, and ROI calculators — ensuring every sales conversation is informed, confident, and positioned to win against the strongest competition.",
+      "We deploy Gong.io, Chorus, Clari, and related platforms so every conversation becomes coaching data, every deal risk is visible early, and managers get pipeline truth — not optimistic guesses — without adding reporting overhead.",
   },
-
   {
-    title: "Multi-Channel Outbound Infrastructure",
+    title: "Implementation Methodology",
     highlight:
-      "Reach your best prospects on every channel they use",
+      "Discovery, design, build, and deploy with adoption built in",
     description:
-      "We build outbound sales infrastructure across cold email, LinkedIn outreach, intent data targeting, and direct mail — using tools like Apollo, Outreach, Salesloft, Clay, and Instantly to create systematic, scalable outbound motion that generates consistent pipeline without depending on referrals or inbound alone.",
-  },
-
-  {
-    title: "Revenue Intelligence & Conversation Analytics",
-    highlight:
-      "Learn from every sales conversation at scale",
-    description:
-      "We implement revenue intelligence platforms including Gong, Chorus, and Clari that analyse sales calls, identify winning patterns, flag at-risk deals, and coach reps automatically. Every conversation becomes a data point. Every lost deal becomes a lesson. Your entire team improves continuously without additional management overhead.",
-  },
-
-  {
-    title: "Sales and Marketing SLA Frameworks",
-    highlight:
-      "Define exactly what both teams owe each other",
-    description:
-      "We build the formal service level agreements, lead handoff protocols, and shared reporting frameworks that align marketing and sales into one accountable revenue team. Lead definitions are agreed. Follow-up timelines are enforced. Recycled leads are managed. Feedback loops are closed. The result is a commercial operation that actually functions as one unit.",
-  },
-
-  {
-    title: "Proposal & Contract Automation",
-    highlight:
-      "From verbal yes to signed contract in hours, not days",
-    description:
-      "We implement proposal automation and e-signature infrastructure using tools like PandaDoc, Proposify, and DocuSign — creating templated, branded, data-populated proposals that go out the same day, track prospect engagement, and accelerate time to signature without legal bottlenecks.",
+      "Our phased approach covers discovery (2–3 weeks), design (3–4 weeks), build (6–8 weeks), and deploy with training, hypercare, and optimization (2–3 weeks) — so go-live is not the finish line; measurable productivity is.",
   },
 ];
 
@@ -135,33 +129,32 @@ export default function Page() {
     <>
       <SubPageHero
         backgroundImage="/images/bg-image/Fold-bg.png"
-        headline="PIPELINE. VELOCITY. CONVERSION. ALWAYS."
-        subheadline="Enterprise sales infrastructure built for organisations that need to win consistently, convert efficiently, and scale without adding headcount.
-We build the automation systems, CRM architecture, lead nurture infrastructure, and pipeline frameworks that transform sales from a people-dependent function into a scalable, measurable, system-driven growth engine."
+        headline="Sales systems that accelerate pipeline and close deals faster"
+        subheadline="Implement CRM and sales automation platforms that give reps the tools they need, managers the visibility they require, and executives the confidence they demand."
       />
       <OurVision
         eyebrow="OUR VISION"
         leftTitle={[
-          "NO",
-          "GUESS - WORK.",
-          "ONLY",
-          "INFRA-STRUCTURE.",
+          "PIPELINE.",
+          "VELOCITY.",
+          "CLOSE.",
+          "SCALE.",
         ]}
-        title="A world where revenue is engineered, not hoped for."
-        description="The most successful enterprise businesses in the world do not rely on great salespeople alone. They rely on great systems. We build the revenue infrastructure that makes consistent growth a structural certainty — where pipeline fills predictably, conversion rates improve continuously, and every team knows exactly what they own and what winning looks like."
+        title="Sales technology that turns productivity into a system."
+        description="Modern B2B selling needs systems that automate manual work, surface insights, guide rep behavior, and give real-time pipeline visibility. NineXFold implements CRM, sales engagement, CPQ, CLM, enrichment, and conversation intelligence ecosystems that transform sales effectiveness."
         image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
         eyebrow="OUR VALUES"
-        title="The principles behind every revenue system we architect."
-        description="Enterprise revenue infrastructure built without principles fails at scale. Every engagement we take on is grounded in the following commitments."
-        quote="Alignment Before Automation"
-        quoteDescription="We align people and processes before we automate anything. The most sophisticated tech stack in the world underperforms on misaligned teams."
+        title="The principles behind every sales system we implement."
+        description="Sales technology without adoption fails. Every engagement prioritizes process fit, user experience, and measurable velocity."
+        quote="Adoption Before Complexity"
+        quoteDescription="We configure systems sellers will actually use — then layer automation and intelligence. The best sales stack is the one that gets used every day."
         tags={[
-          "Alignment",
-          "Clarity",
-          "Structure",
+          "Adoption",
+          "Velocity",
+          "Visibility",
         ]}
         image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
       />

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OverviewSection from "@/components/sections/common/OverviewSection";
 import ClientSuccessMetricsSection from "../ClientSuccessMetricsSection";
@@ -6,6 +7,28 @@ import {
   Bot,
   Brain,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "AI & Generative AI | Enterprise AI Strategy, ML & GenAI | NineXDevOps",
+  description:
+    "Implement AI solutions that automate operations, enhance decision-making, and create new capabilities — with enterprise-grade security, governance, and compliance. Schedule an AI Assessment.",
+  keywords: [
+    "enterprise AI",
+    "generative AI",
+    "LLM",
+    "MLOps",
+    "OpenAI",
+    "Anthropic",
+    "custom ML",
+    "AI governance",
+    "NineXDevOps",
+  ],
+  openGraph: {
+    title: "AI & Generative AI | NineXDevOps",
+    description:
+      "Enterprise AI from strategy to production — custom ML, GenAI, agents, MLOps, and governance.",
+  },
+};
 
 const metricGroups = [
   {
@@ -55,42 +78,39 @@ const metricGroups = [
     showArrow: false,
   },
 ];
+
 export default function Page() {
-    return (
-        <>
-            <SubPageHero
-                backgroundImage="/images/bg-image/Devops-bg.png"
-                headline="Enterprise AI from strategy to production deployment"
-                subheadline=" Implement AI solutions that automate operations, enhance decision-making, and
-create new capabilities—with enterprise-grade security, governance, and compliance."
-            />
-            <OverviewSection
-                eyebrow="OVERVIEW"
-                leftTitle={[
-                    "AI",
-                    "DRIVES",
-                    "BUSINESS.",
-                    "OUTCOMES.",
-                ]}
-                title="Artificial intelligence represents the most significant technological shift since cloud computing.
-NineXDevOps implements enterprise AI solutions spanning strategy, custom AI development, AI
-agent platforms, and AI operations, powered by strategic partnerships with OpenAI, Anthropic,
-Google, Microsoft, and NVIDIA."
-                description="We deliver AI solutions across four core pillars: AI strategy and roadmap creation, custom AI and ML model development, enterprise AI agent platforms, and secure, scalable AI operations (MLOps)."
-                implementationTitle="What We Implement:"
-                implementations={[
-                  "AI strategy and implementation roadmaps",
-                  "Custom AI and ML solutions",
-                  "Generative AI applications",
-                  "AI agent platforms",
-                  "AI/ML operations (MLOps)",
-                  "AI governance frameworks",
-                ]}
-                image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
-            />
-            <ClientSuccessMetricsSection
-                metricGroups={metricGroups}
-            />
-        </>
-    );
+  return (
+    <>
+      <SubPageHero
+        backgroundImage="/images/bg-image/Devops-bg.png"
+        headline="Enterprise AI from strategy to production deployment"
+        subheadline="Implement AI solutions that automate operations, enhance decision-making, and create new capabilities — with enterprise-grade security, governance, and compliance."
+      />
+      <OverviewSection
+        eyebrow="OVERVIEW"
+        leftTitle={[
+          "STRATEGY.",
+          "BUILD.",
+          "DEPLOY.",
+          "GOVERN.",
+        ]}
+        title="Enterprise AI spanning strategy, custom models, generative applications, and MLOps."
+        description="NineXDevOps implements enterprise AI solutions powered by partnerships with OpenAI, Anthropic, Google, Microsoft, and NVIDIA — from opportunity assessment and roadmaps through custom ML, RAG and LLM applications, AI agent platforms, and responsible AI governance."
+        implementationTitle="What We Build:"
+        implementations={[
+          "AI strategy and implementation roadmaps",
+          "Custom AI and ML solutions",
+          "Generative AI applications",
+          "AI agent platforms",
+          "AI/ML operations (MLOps)",
+          "AI governance frameworks",
+        ]}
+        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+      />
+      <ClientSuccessMetricsSection
+        metricGroups={metricGroups}
+      />
+    </>
+  );
 }

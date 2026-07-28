@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "../OurVision";
 import ValuesSection from "../ValuesSection";
@@ -8,6 +9,28 @@ import {
   User,
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
+
+export const metadata: Metadata = {
+  title: "AI Agent Development | Autonomous Enterprise Agents | NineXDevOps",
+  description:
+    "Design, architect, and deploy production-grade AI agents that research, process data, manage workflows, and engage customers 24/7. Build governed agentic systems with NineXDevOps.",
+  keywords: [
+    "AI agents",
+    "agentic AI",
+    "LangChain",
+    "LangGraph",
+    "CrewAI",
+    "AutoGen",
+    "multi-agent systems",
+    "enterprise AI agents",
+    "NineXDevOps",
+  ],
+  openGraph: {
+    title: "AI Agent Development | NineXDevOps",
+    description:
+      "Purpose-built AI agents that operate autonomously inside your enterprise — research, sales, support, compliance, and orchestration.",
+  },
+};
 
 const metricGroups = [
   {

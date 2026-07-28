@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "@/app/ninexFoldServices/OurVision";
 import ValuesSection from "@/app/ninexFoldServices/ValuesSection";
@@ -9,19 +10,42 @@ import {
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
 
+export const metadata: Metadata = {
+  title: "Demand Generation System | Pipeline, ABM & Performance Marketing | NineXFold",
+  description:
+    "Build full-funnel demand generation infrastructure that delivers qualified pipeline, scales MQL volume, and reduces cost per lead — every quarter. Schedule a Demand Generation Assessment.",
+  keywords: [
+    "demand generation",
+    "pipeline generation",
+    "MQL",
+    "cost per lead",
+    "performance marketing",
+    "account-based marketing",
+    "ABM",
+    "intent data",
+    "lead nurture",
+    "NineXFold",
+  ],
+  openGraph: {
+    title: "Demand Generation System | NineXFold",
+    description:
+      "Enterprise demand engines that fill pipeline predictably — performance marketing, ABM, intent, and conversion systems.",
+  },
+};
+
 const metricGroups = [
   {
     icon: <AlertTriangle size={22} strokeWidth={1.5} />,
     title: "Challenge",
     items: [
-      ["8", "different CRM systems and disconnected data"],
-      ["50%", "forecast accuracy missing quarterly targets"],
-      ["0", "unified customer view across products"],
-      ["180D", "sales cycles increasing and win rates declining"],
-      ["BLIND", "executive team lacking revenue visibility"],
+      ["EMPTY", "pipeline gaps every quarter end"],
+      ["HIGH", "CPL climbing with diminishing returns"],
+      ["LOW", "MQL-to-SQL conversion from unqualified volume"],
+      ["1", "channel dependency creating fragile demand"],
+      ["BLIND", "no clear attribution of demand to revenue"],
     ],
     footerTitle: "BUSINESS PAIN",
-    footerText: "FRAGMENTED. DISCONNECTED.",
+    footerText: "UNPREDICTABLE. EXPENSIVE.",
     showArrow: true,
   },
 
@@ -29,14 +53,14 @@ const metricGroups = [
     icon: <Cpu size={22} strokeWidth={1.5} />,
     title: "Solution",
     items: [
-      ["CRM", "Unified Salesforce Revenue Cloud platform"],
-      ["AI", "Clari predictive forecasting and analytics"],
-      ["GONG", "Conversation intelligence and coaching"],
-      ["DATA", "Custom attribution and waterfall reporting"],
-      ["LIVE", "Executive dashboards with real-time visibility"],
+      ["FUNNEL", "Full-funnel demand create and capture strategy"],
+      ["PAID", "Multi-channel performance marketing at scale"],
+      ["ABM", "Account-based programmes with intent signals"],
+      ["NURTURE", "Behavioural email and lead qualification flows"],
+      ["ATTR", "Multi-touch attribution to pipeline and revenue"],
     ],
     footerTitle: "IMPLEMENTED SYSTEMS",
-    footerText: "CONNECTED. INTELLIGENT.",
+    footerText: "QUALIFIED. RESILIENT.",
     showArrow: false,
   },
 
@@ -44,18 +68,19 @@ const metricGroups = [
     icon: <TrendingUp size={22} strokeWidth={1.5} />,
     title: "Results",
     items: [
-      ["95%", "forecast accuracy improvement"],
-      ["$300M", "revenue impact in year one"],
-      ["60%", "faster sales cycles"],
-      ["40%", "larger average deal sizes"],
-      ["95%", "sales adoption within 30 days"],
-      ["3M", "ROI realization timeline"],
+      ["$12M", "pipeline generated in first 12 months"],
+      ["3.5X", "increase in monthly MQL volume"],
+      ["42%", "reduction in cost per lead"],
+      ["2X", "MQL-to-SQL conversion improvement"],
+      ["65%", "of pipeline from diversified demand mix"],
+      ["4M", "to predictable month-over-month demand"],
     ],
     footerTitle: "BUSINESS OUTCOMES",
     footerText: "MEASURABLE. SCALABLE.",
     showArrow: false,
   },
 ];
+
 const cards = [
   {
     title: "Full-Funnel Demand Strategy",
@@ -137,12 +162,13 @@ const cards = [
       "We document your complete demand generation system in a comprehensive operational playbook — covering channel strategy, campaign templates, audience frameworks, testing protocols, and scaling criteria — creating the institutional knowledge your team needs to execute consistently and the blueprint your business needs to scale demand generation into new markets.",
   },
 ];
+
 export default function Page() {
   return (
     <>
       <SubPageHero
         backgroundImage="/images/bg-image/Fold-bg.png"
-        headline="FILL EVERY PIPELINE. EVERY QUARTER. NO EXCUSES."
+        headline="Fill every pipeline, every quarter, with predictable demand"
         subheadline="Enterprise full-funnel demand generation infrastructure that delivers consistent, qualified pipeline at scale — without depending on referrals, seasonality, or a single channel.
                     We deploy performance marketing, account-based marketing, intent data targeting, lead nurture infrastructure, conversion optimisation, and email systems into one unified demand engine that generates, qualifies, and converts pipeline month after month with the predictability your business needs to plan, invest, and grow confidently."
       />

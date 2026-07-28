@@ -44,12 +44,12 @@ export default function OurVision({
             <div className="relative lg:absolute lg:left-0 lg:top-[85%] lg:-translate-y-1/2 w-full">
               {leftTitle.map((item, index) => (
                 <div key={index} className="mb-[8px]">
-                  <h2 className="text-[42px] sm:text-[56px] lg:text-[70px] leading-[0.88] tracking-[-2px] lg:tracking-[-3px] font-bold uppercase py-[6px] text-white/90">
+                  <h2 className="text-[42px] sm:text-[56px] lg:text-[70px] leading-[0.88] tracking-[-2px] lg:tracking-[-3px] font-bold uppercase py-[6px] text-[#8a8a8a]">
                     {item}
                   </h2>
 
                   {index !== leftTitle.length - 1 && (
-                    <div className="w-[180px] sm:w-[220px] lg:w-[230px] h-[3px] bg-white/70" />
+                    <div className="w-[180px] sm:w-[220px] lg:w-[230px] h-[3px] bg-[#8a8a8a]/70" />
                   )}
                 </div>
               ))}

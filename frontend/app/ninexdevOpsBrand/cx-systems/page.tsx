@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "../OurVision";
 import ValuesSection from "../ValuesSection";
@@ -9,161 +10,150 @@ import {
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
 
+export const metadata: Metadata = {
+  title: "CX Systems | CDP, Journey Orchestration & Contact Center | NineXDevOps",
+  description:
+    "Implement customer experience platforms that orchestrate journeys, personalize interactions, and turn service into competitive advantage. Schedule a CX Assessment with NineXDevOps.",
+  keywords: [
+    "CX systems",
+    "customer experience",
+    "CDP",
+    "journey orchestration",
+    "contact center",
+    "Salesforce Service Cloud",
+    "Qualtrics",
+    "NineXDevOps",
+  ],
+  openGraph: {
+    title: "CX Systems | NineXDevOps",
+    description:
+      "Customer experiences that build loyalty and drive growth — CDP, journeys, contact centers, and VoC.",
+  },
+};
+
 const metricGroups = [
   {
     icon: <BarChart3 size={22} strokeWidth={1.5} />,
-    title: "Client Success Story",
+    title: "Challenge",
     items: [
-      ["15M", "customers unified through connected CX infrastructure"],
-      ["23", "data sources integrated into one CDP platform"],
-      ["50M", "real-time events processed per hour"],
-      ["12-Month", "ROI achieved on total CX technology investment"],
+      ["200+", "fragmented systems holding customer data"],
+      ["30", "countries without a unified customer view"],
+      ["SILO", "inconsistent experiences across channels"],
+      ["35", "NPS below industry average of 45"],
+      ["50M", "customers needing connected CX"],
     ],
-    footerTitle: "CX SYSTEMS TRANSFORMATION",
-    footerText: "CONNECTED. REAL-TIME.",
+    footerTitle: "CX FRAGMENTATION",
+    footerText: "DISCONNECTED. INCONSISTENT.",
     showArrow: true,
   },
   {
     icon: <SlidersHorizontal size={22} strokeWidth={1.5} />,
-    title: "Commercial Results",
+    title: "Solution",
     items: [
-      ["58", "NPS increased from 28 within 18 months"],
-      ["14%", "annual churn reduced from 25%"],
-      ["$400M", "retained revenue from churn reduction"],
-      ["45%", "improvement in cross-sell conversion"],
+      ["CDP", "Salesforce Data Cloud for unified profiles"],
+      ["SVC", "Service Cloud across 30 countries"],
+      ["JOURNEY", "Adobe Journey Optimizer personalization"],
+      ["CC", "Genesys Cloud omnichannel contact centers"],
+      ["VOC", "Qualtrics customer feedback"],
+      ["AI", "Chatbots handling 60% of inquiries"],
     ],
-    footerTitle: "MEASURABLE IMPACT",
-    footerText: "PERSONALISED. SCALABLE.",
+    footerTitle: "CX PLATFORM",
+    footerText: "UNIFIED. ORCHESTRATED.",
     showArrow: false,
   },
   {
     icon: <User size={22} strokeWidth={1.5} />,
-    title: "Technology Infrastructure",
+    title: "Results",
     items: [
-      ["Segment\nCDP", "unified customer data platform across all systems"],
-      ["Adobe\nJourney Optimizer", "real-time cross-channel orchestration"],
-      ["Kafka\nStreaming", "millisecond-latency event processing infrastructure"],
-      ["Dynamic\nYield", "AI-powered web and app personalisation"],
+      ["75", "NPS (up 40 points from 35)"],
+      ["$200M", "incremental cross-sell revenue"],
+      ["30%", "reduction in customer acquisition costs"],
+      ["50%", "decrease in support costs"],
+      ["90%", "satisfaction with digital experiences"],
+      ["4.5", "mobile app rating (from 2.8)"],
     ],
-    footerTitle: "REAL-TIME CUSTOMER INTELLIGENCE",
-    footerText: "UNIFIED. ACTIONABLE.",
+    footerTitle: "CX IMPACT",
+    footerText: "LOYAL. MEASURABLE.",
     showArrow: false,
   },
 ];
+
 const cards = [
   {
-    title: "Customer Data Platform Implementation",
+    title: "Customer Data Platforms (CDP)",
     highlight:
-      "One unified customer profile across every touchpoint your customers use to interact with you",
+      "One 360° customer profile powering every experience",
     description:
-      "We implement enterprise CDP solutions including Segment, Rudderstack, mParticle, Tealium, and Bloomreach — building the data collection infrastructure, identity resolution logic, audience segmentation models, and real-time activation pipelines that unify customer data from every source into one complete, continuously updated customer profile. Personalisation, attribution, and AI all depend on this foundation existing correctly.",
+      "We implement Segment, Adobe Real-Time CDP, Salesforce Data Cloud, Treasure Data, and Tealium — unified profiles, identity resolution, real-time ingestion, segmentation, consent management, and activation to marketing and sales tools. Outcomes: 100% unified customer view and 50% fewer duplicate records.",
   },
-
   {
-    title: "Journey Orchestration Engine Implementation",
+    title: "Journey Orchestration & Personalization",
     highlight:
-      "Execute personalised, cross-channel customer journeys for millions of customers simultaneously",
+      "Cross-channel journeys that respond in real time",
     description:
-      "We implement journey orchestration platforms including Adobe Journey Optimizer, Salesforce Marketing Cloud Journey Builder, Braze, Iterable, and Bloomreach Engagement — with complex journey logic, real-time behavioural triggers, AI-powered next-best-action, A/B testing infrastructure, and multi-channel coordination across email, SMS, push, in-app, and paid media simultaneously.",
+      "We implement Adobe Journey Optimizer, Salesforce Marketing Cloud Journey Builder, Braze, Iterable, and MoEngage — behavioral triggers, next-best-action, dynamic content, and journey analytics. Results: 45% higher engagement and 40% better retention.",
   },
-
   {
-    title: "Digital Experience Platform (DXP)",
+    title: "Contact Center & Omnichannel Service",
     highlight:
-      "The content and experience infrastructure that delivers consistent, personalised experiences across every digital channel",
+      "Voice, chat, email, and social in one agent workspace",
     description:
-      "We implement Digital Experience Platforms including Adobe Experience Manager, Sitecore, Contentful, and Contentstack — with headless architecture for maximum channel flexibility, content modelling, workflow management for enterprise content teams, personalisation integration, search implementation, and the performance optimisation that ensures every experience loads fast in every market.",
+      "We implement Salesforce Service Cloud, Genesys Cloud CX, Amazon Connect, Five9, NICE CXone, and Zendesk — omnichannel routing, IVR, self-service, knowledge, AI chatbots, WFM, and quality management. Outcomes: 50% lower handle time and 90%+ CSAT.",
   },
-
   {
-    title: "Personalisation Engine Architecture",
+    title: "Customer Feedback & Experience Management",
     highlight:
-      "Real-time personalisation at enterprise scale — every visitor, a unique experience",
+      "Closed-loop VoC that improves NPS and retention",
     description:
-      "We implement and architect personalisation platforms including Dynamic Yield, Optimizely, Adobe Target, and custom ML-based personalisation systems — delivering product recommendations, dynamic content, behavioural targeting, predictive personalisation, and continuous A/B and multivariate experimentation across website, mobile, email, and app channels simultaneously.",
+      "We implement Qualtrics XM, Medallia, InMoment, and related platforms — NPS/CSAT/CES, text analytics, journey-based feedback, closed-loop workflows, and executive dashboards. Typical results: 30-point NPS improvement and 80% closed-loop completion.",
   },
-
   {
-    title: "Loyalty Platform Implementation",
+    title: "Service Automation & Case Management",
     highlight:
-      "The technical infrastructure behind loyalty programmes that retain customers and compound lifetime value",
+      "Resolve faster with intelligent routing and automation",
     description:
-      "We build and implement enterprise loyalty platforms — covering points and rewards architecture, tier management, partner ecosystem integration, mobile loyalty apps, gamification systems, redemption infrastructure, and loyalty analytics — creating the technical foundation for loyalty programmes that actually change customer behaviour and measurably improve retention, purchase frequency, and lifetime value.",
+      "We design case management, escalation, knowledge, and self-service automation so customers get answers without waiting — and agents get full context on every interaction.",
   },
-
   {
-    title: "Customer Feedback & VoC Systems",
+    title: "Loyalty & Engagement Platforms",
     highlight:
-      "Capture, analyse, and act on customer voice at scale — across every touchpoint",
+      "Turn satisfaction into lifetime value and advocacy",
     description:
-      "We implement Voice of Customer and feedback platforms including Qualtrics, Medallia, and Sprinklr — with survey deployment automation, NPS and CSAT measurement infrastructure, sentiment analysis using NLP, real-time alert systems for experience failures, and closed-loop response workflows that ensure every piece of negative feedback triggers an action before the customer churns.",
-  },
-
-  {
-    title: "In-App & Digital Onboarding Systems",
-    highlight:
-      "The product experience infrastructure that drives adoption and reduces time to first value",
-    description:
-      "We build in-app onboarding and digital adoption systems using Pendo, WalkMe, Appcues, and custom implementations — covering interactive product tours, contextual help systems, feature discovery prompts, adoption analytics, and A/B testing infrastructure that continuously optimises the path every new user takes to their first value moment.",
-  },
-
-  {
-    title: "CX Analytics & Attribution Infrastructure",
-    highlight:
-      "Measure every customer interaction against commercial outcomes — not just satisfaction scores",
-    description:
-      "We build CX analytics infrastructure that connects every customer interaction — across every channel and every touchpoint — to commercial outcomes including retention, expansion revenue, customer lifetime value, and referral generation. Net Promoter Score tells you how customers feel. Our analytics tell you what those feelings are worth in revenue and what investments in experience produce the greatest commercial return.",
-  },
-
-  {
-    title: "CX Integration Architecture",
-    highlight:
-      "Connect every CX platform into one unified, commercially measurable system",
-    description:
-      "We design and build the integration architecture that connects your CDP, CRM, marketing automation, personalisation engine, loyalty platform, contact centre, analytics stack, and digital experience platform — ensuring data flows automatically between every system, customer context is always complete, and every team working on customer experience has access to the full picture without manual data assembly.",
-  },
-
-  {
-    title: "Real-Time Event Streaming for CX",
-    highlight:
-      "React to customer behaviour in milliseconds rather than hours or days",
-    description:
-      "We implement real-time event streaming infrastructure using Apache Kafka, AWS Kinesis, and Google Pub/Sub — enabling the millisecond-latency customer behaviour processing that powers real-time personalisation, instant fraud detection, live recommendation updates, and triggered communication at the exact moment a customer action signals the right next step in their journey.",
+      "We implement loyalty and engagement platforms that reward desired behaviors, personalize offers, and connect retention programs to your CDP and journey stack for measurable LTV lift.",
   },
 ];
+
 export default function Page() {
   return (
     <>
       <SubPageHero
         backgroundImage="/images/bg-image/DevOps-bg.png"
-        headline="BUILD. CONNECT. PERSONALISE. RETAIN."
-        subheadline="The technical infrastructure behind enterprise customer experience — implemented with the engineering precision, integration depth, and operational reliability that transforms CX strategy into customer experience reality at scale.
-                      We build and implement the complete technical stack that powers enterprise customer experience — from Customer Data Platforms, journey orchestration engines, and personalisation infrastructure through CRM technical architecture, contact centre platforms, digital experience platforms, and the analytics systems that measure every interaction commercially. Every system we build is connected, measurable, and designed to improve continuously.
-                    "
+        headline="Customer experiences that build loyalty and drive growth"
+        subheadline="Implement customer experience platforms that orchestrate journeys, personalize interactions, and turn service into competitive advantage."
       />
       <OurVision
         eyebrow="OUR VISION"
         leftTitle={[
-          "TECH-NOLOGY",
-          "THAT MAKES",
-          "CUSTOMERS",
-          "FEEL KNOWN.",
+          "UNIFY.",
+          "ORCHESTRATE.",
+          "PERSONALISE.",
+          "RETAIN.",
         ]}
-        title="Customer experience technology so well-integrated that every customer interaction feels individually designed for them."
-        description="Great customer experience is not a design problem. It is an engineering problem. The most personalised, most connected, most commercially effective customer experiences in the world are built on exceptional technical infrastructure — unified data, real-time processing, connected systems, and continuous optimisation. We build that infrastructure, and we build it to the standard that makes genuine personalisation at millions-of-customers scale commercially and operationally viable."
+        title="CX technology that makes every customer feel known."
+        description="Exceptional customer experience needs unified data, intelligent automation, and seamless orchestration across every touchpoint. NineXDevOps implements CX platforms spanning CDP, journey orchestration, contact centers, service automation, and experience management."
         image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
         eyebrow="OUR VALUES"
-        title="The principles behind every customer experience system we build."
-        description="CX technology built without principles creates fragmented experiences at scale. Every engagement we take on is grounded in these four commitments to ensure what we build is data-driven, real-time, commercially accountable, and fully integrated."
+        title="The principles behind every CX system we build."
+        description="CX technology without a data foundation creates fragmented experiences at scale. Every engagement starts with unified profiles and measurable outcomes."
         quote="Data is the Foundation of Every Experience"
-        quoteDescription="Personalisation without data is guesswork. We build the data infrastructure first — CDP, identity resolution, event streaming — before we implement personalisation, journey orchestration, or loyalty systems. Every experience is only as good as the data that powers it."
+        quoteDescription="Personalisation without data is guesswork. We build CDP, identity, and event infrastructure before journey and contact center layers."
         tags={[
           "Data",
-          "Foundation",
-          "Precision",
+          "Orchestration",
+          "Loyalty",
         ]}
         image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
       />

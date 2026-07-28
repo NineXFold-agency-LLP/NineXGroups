@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "@/app/ninexFoldServices/OurVision";
 import ValuesSection from "@/app/ninexFoldServices/ValuesSection";
@@ -9,19 +10,42 @@ import {
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
 
+export const metadata: Metadata = {
+  title: "Content & Social Authority System | Thought Leadership, PR & Influence | NineXFold",
+  description:
+    "Build enterprise content, social, and PR systems that compound brand authority — higher output, engagement, and backlinks that competitors cannot buy. Schedule a Content Authority Assessment.",
+  keywords: [
+    "content authority",
+    "social media strategy",
+    "thought leadership",
+    "content marketing",
+    "digital PR",
+    "influencer programmes",
+    "brand authority",
+    "backlinks",
+    "engagement",
+    "NineXFold",
+  ],
+  openGraph: {
+    title: "Content & Social Authority System | NineXFold",
+    description:
+      "Content, social, and PR engines that build compounding brand authority buyers cannot ignore.",
+  },
+};
+
 const metricGroups = [
   {
     icon: <AlertTriangle size={22} strokeWidth={1.5} />,
     title: "Challenge",
     items: [
-      ["8", "different CRM systems and disconnected data"],
-      ["50%", "forecast accuracy missing quarterly targets"],
-      ["0", "unified customer view across products"],
-      ["180D", "sales cycles increasing and win rates declining"],
-      ["BLIND", "executive team lacking revenue visibility"],
+      ["SPARSE", "publishing cadence leaving category empty"],
+      ["LOW", "engagement relative to competitor brands"],
+      ["0", "consistent executive thought leadership presence"],
+      ["WEAK", "earned media and referring domain profile"],
+      ["SILO", "content, social, and PR running disconnected"],
     ],
     footerTitle: "BUSINESS PAIN",
-    footerText: "FRAGMENTED. DISCONNECTED.",
+    footerText: "INVISIBLE. INCONSISTENT.",
     showArrow: true,
   },
 
@@ -29,14 +53,14 @@ const metricGroups = [
     icon: <Cpu size={22} strokeWidth={1.5} />,
     title: "Solution",
     items: [
-      ["CRM", "Unified Salesforce Revenue Cloud platform"],
-      ["AI", "Clari predictive forecasting and analytics"],
-      ["GONG", "Conversation intelligence and coaching"],
-      ["DATA", "Custom attribution and waterfall reporting"],
-      ["LIVE", "Executive dashboards with real-time visibility"],
+      ["EDIT", "Editorial architecture and content operating system"],
+      ["SOCIAL", "Enterprise social and community programmes"],
+      ["TL", "Executive thought leadership and ghostwriting"],
+      ["PR", "Earned media and digital PR campaigns"],
+      ["DIST", "Distribution and amplification across channels"],
     ],
     footerTitle: "IMPLEMENTED SYSTEMS",
-    footerText: "CONNECTED. INTELLIGENT.",
+    footerText: "PUBLISHED. AMPLIFIED.",
     showArrow: false,
   },
 
@@ -44,18 +68,19 @@ const metricGroups = [
     icon: <TrendingUp size={22} strokeWidth={1.5} />,
     title: "Results",
     items: [
-      ["95%", "forecast accuracy improvement"],
-      ["$300M", "revenue impact in year one"],
-      ["60%", "faster sales cycles"],
-      ["40%", "larger average deal sizes"],
-      ["95%", "sales adoption within 30 days"],
-      ["3M", "ROI realization timeline"],
+      ["4X", "monthly content output with quality standards"],
+      ["220%", "increase in social engagement rate"],
+      ["150+", "high-authority backlinks earned in year one"],
+      ["35+", "tier-1 and industry media placements"],
+      ["3X", "growth in branded search and mentions"],
+      ["8M", "to measurable authority compounding"],
     ],
     footerTitle: "BUSINESS OUTCOMES",
-    footerText: "MEASURABLE. SCALABLE.",
+    footerText: "AUTHORITATIVE. COMPOUNDING.",
     showArrow: false,
   },
 ];
+
 const cards = [
   {
     title: "Content Strategy & Editorial Architecture",
@@ -137,12 +162,13 @@ const cards = [
       "We build content analytics systems that track every piece of content against both authority metrics — search rankings, social engagement, PR coverage, brand mentions, share of voice — and commercial metrics — content-influenced pipeline, content-assisted revenue, and content's contribution to reducing sales cycle length. Continuous optimisation ensures your content investment compounds in value over time.",
   },
 ];
+
 export default function Page() {
   return (
     <>
       <SubPageHero
         backgroundImage="/images/bg-image/Fold-bg.png"
-        headline="CREATE. INFLUENCE. COMPOUND. LEAD."
+        headline="Create content and social authority that compounds into category leadership"
         subheadline="Enterprise content strategy, social media infrastructure, influencer programmes, video production, thought leadership, and PR systems that build the kind of brand authority competitors cannot replicate and buyers cannot ignore.
                     We run your complete content and social engine — producing editorial that ranks, social content that builds community, thought leadership that earns speaking engagements, influencer programmes that extend reach, and PR campaigns that earn the coverage no advertisement can buy. The result is compounding brand authority that makes every other marketing investment perform better."
       />

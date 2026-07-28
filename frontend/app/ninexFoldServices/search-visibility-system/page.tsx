@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "@/app/ninexFoldServices/OurVision";
 import ValuesSection from "@/app/ninexFoldServices/ValuesSection";
@@ -9,19 +10,42 @@ import {
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
 
+export const metadata: Metadata = {
+  title: "Search Visibility System | SEO, AEO & GEO Organic Growth | NineXFold",
+  description:
+    "Engineer organic search dominance with technical SEO, content authority, AEO, and GEO — growing rankings, traffic, and pipeline from search. Schedule a Search Visibility Assessment.",
+  keywords: [
+    "search visibility",
+    "SEO",
+    "organic traffic",
+    "AEO answer engine optimisation",
+    "GEO generative engine optimisation",
+    "technical SEO",
+    "link building",
+    "search rankings",
+    "organic pipeline",
+    "NineXFold",
+  ],
+  openGraph: {
+    title: "Search Visibility System | NineXFold",
+    description:
+      "SEO, AEO, and GEO systems that make your brand the most visible, cited, and trusted presence across every search surface.",
+  },
+};
+
 const metricGroups = [
   {
     icon: <AlertTriangle size={22} strokeWidth={1.5} />,
     title: "Challenge",
     items: [
-      ["8", "different CRM systems and disconnected data"],
-      ["50%", "forecast accuracy missing quarterly targets"],
-      ["0", "unified customer view across products"],
-      ["180D", "sales cycles increasing and win rates declining"],
-      ["BLIND", "executive team lacking revenue visibility"],
+      ["PAGE3", "priority keywords stuck below the fold"],
+      ["FLAT", "organic traffic plateau despite content spend"],
+      ["0", "featured snippet or AI Overview presence"],
+      ["WEAK", "backlink profile versus category competitors"],
+      ["BLIND", "no clear line from SEO to pipeline"],
     ],
     footerTitle: "BUSINESS PAIN",
-    footerText: "FRAGMENTED. DISCONNECTED.",
+    footerText: "INVISIBLE. UNDER-ATTRIBUTED.",
     showArrow: true,
   },
 
@@ -29,14 +53,14 @@ const metricGroups = [
     icon: <Cpu size={22} strokeWidth={1.5} />,
     title: "Solution",
     items: [
-      ["CRM", "Unified Salesforce Revenue Cloud platform"],
-      ["AI", "Clari predictive forecasting and analytics"],
-      ["GONG", "Conversation intelligence and coaching"],
-      ["DATA", "Custom attribution and waterfall reporting"],
-      ["LIVE", "Executive dashboards with real-time visibility"],
+      ["TECH", "Technical SEO and Core Web Vitals remediation"],
+      ["CONTENT", "Topical authority and intent-led content SEO"],
+      ["LINKS", "Digital PR and high-authority link acquisition"],
+      ["AEO", "Answer engine and featured snippet optimisation"],
+      ["GEO", "Generative AI citation and brand mention strategy"],
     ],
     footerTitle: "IMPLEMENTED SYSTEMS",
-    footerText: "CONNECTED. INTELLIGENT.",
+    footerText: "RANKED. CITED. FOUND.",
     showArrow: false,
   },
 
@@ -44,18 +68,19 @@ const metricGroups = [
     icon: <TrendingUp size={22} strokeWidth={1.5} />,
     title: "Results",
     items: [
-      ["95%", "forecast accuracy improvement"],
-      ["$300M", "revenue impact in year one"],
-      ["60%", "faster sales cycles"],
-      ["40%", "larger average deal sizes"],
-      ["95%", "sales adoption within 30 days"],
-      ["3M", "ROI realization timeline"],
+      ["180%", "increase in organic traffic year over year"],
+      ["85+", "keywords moved into top-3 positions"],
+      ["$4.2M", "pipeline attributed to organic search"],
+      ["40%", "of inbound MQLs from non-branded SEO"],
+      ["12", "AI Overview and featured snippet wins"],
+      ["9M", "to compounding organic growth trajectory"],
     ],
     footerTitle: "BUSINESS OUTCOMES",
-    footerText: "MEASURABLE. SCALABLE.",
+    footerText: "COMPOUNDING. DEFENSIBLE.",
     showArrow: false,
   },
 ];
+
 const cards = [
   {
     title: "Technical SEO Infrastructure",
@@ -137,12 +162,13 @@ const cards = [
       "We implement AI-assisted SEO content systems that allow your brand to produce optimised content at a pace and volume previously impossible — covering topic clustering, AI-assisted drafting with human editorial oversight, programmatic SEO for large-scale page creation, and automated content auditing that identifies underperforming pages and recommends improvements continuously.",
   },
 ];
+
 export default function Page() {
   return (
     <>
       <SubPageHero
         backgroundImage="/images/bg-image/Fold-bg.png"
-        headline="RANK. ANSWER. APPEAR. EVERYWHERE."
+        headline="Rank, answer, and appear everywhere your buyers search"
         subheadline="Enterprise SEO, AEO, and GEO strategy that makes your brand the most visible, most cited, and most trusted presence across every search surface your buyers use — from Google rankings to AI-generated answers.
                     We engineer organic search dominance through technical SEO, content authority, and link building, capture zero-click search through Answer Engine Optimisation, and establish brand presence inside generative AI platforms through GEO — creating a compounding visibility advantage that paid media can never replicate and competitors find nearly impossible to close."
       />

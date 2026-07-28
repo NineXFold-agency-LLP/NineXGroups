@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "../OurVision";
 import ValuesSection from "../ValuesSection";
@@ -8,6 +9,28 @@ import {
   User,
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
+
+export const metadata: Metadata = {
+  title: "Data Engineering & Analytics | Warehouses, Lakes & BI | NineXDevOps",
+  description:
+    "Build enterprise data platforms — warehouses, lakehouses, streaming pipelines, and analytics — with Snowflake, Databricks, dbt, and Kafka. Turn data into decision-ready intelligence with NineXDevOps.",
+  keywords: [
+    "data engineering",
+    "data analytics",
+    "Snowflake",
+    "Databricks",
+    "dbt",
+    "Apache Kafka",
+    "data warehouse",
+    "data lakehouse",
+    "NineXDevOps",
+  ],
+  openGraph: {
+    title: "Data Engineering & Analytics | NineXDevOps",
+    description:
+      "Enterprise data platforms that collect, transform, and analyse at scale — warehouses, lakes, streaming, and BI.",
+  },
+};
 
 const metricGroups = [
   {

@@ -53,12 +53,12 @@ export default function OverviewSection({
                             {leftTitle.map((item, index) => (
                                 <div key={index} className="mb-[8px]">
 
-                                    <h2 className="text-[54px] sm:text-[60px] lg:text-[70px] leading-[0.88] tracking-[-3px] font-bold uppercase py-[6px] text-white/95">
+                                    <h2 className="text-[54px] sm:text-[60px] lg:text-[70px] leading-[0.88] tracking-[-3px] font-bold uppercase py-[6px] text-[#8a8a8a]">
                                         {item}
                                     </h2>
 
                                     {index !== leftTitle.length - 1 && (
-                                        <div className="w-[230px] h-[3px] bg-white/80" />
+                                        <div className="w-[230px] h-[3px] bg-[#8a8a8a]/70" />
                                     )}
                                 </div>
                             ))}

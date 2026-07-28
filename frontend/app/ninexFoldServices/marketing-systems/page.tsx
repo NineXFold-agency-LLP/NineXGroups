@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import ClientSuccessMetricsSection from "../ClientSuccessMetricsSection";
 import WhatWeDoSection from "../WhatWeDo";
@@ -8,6 +9,27 @@ import {
   Megaphone,
   LineChart,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Marketing Systems | Marketing Automation, ABM & Attribution | NineXFold",
+  description:
+    "Build integrated marketing stacks that automate campaigns, nurture leads, prove attribution, and align marketing with revenue outcomes. Explore Marketing Systems with NineXFold.",
+  keywords: [
+    "marketing systems",
+    "marketing automation",
+    "Marketo",
+    "HubSpot",
+    "ABM",
+    "marketing attribution",
+    "marketing operations",
+    "NineXFold",
+  ],
+  openGraph: {
+    title: "Marketing Systems | NineXFold",
+    description:
+      "Marketing technology that generates pipeline and proves ROI — automation, ABM, attribution, and MOps.",
+  },
+};
 
 const metricGroups = [
   {
@@ -57,120 +79,83 @@ const metricGroups = [
     showArrow: false,
   },
 ];
+
 const cards = [
   {
-    title: "Marketing Automation Architecture",
+    title: "Marketing Automation",
     highlight:
-      "Your marketing should run, nurture, and convert without you",
+      "Nurture, score, and convert leads without manual campaign chaos",
     description:
-      "We implement and configure enterprise marketing automation platforms including HubSpot, Marketo, ActiveCampaign, and Pardot — building the workflows, triggers, lead scoring rules, nurture sequences, and lifecycle campaigns that engage every prospect with the right message at exactly the right moment, automatically, across every channel simultaneously.",
+      "We implement Marketo Engage, Salesforce Pardot, HubSpot Marketing Hub, Eloqua, and ActiveCampaign — email automation, drip campaigns, lead scoring, forms and landing pages, webinars, A/B testing, and CRM sync. Outcomes: 60% more MQLs, 40% better lead-to-opportunity conversion, and 70% time savings.",
   },
-
   {
-    title: "Marketing Operations Infrastructure",
+    title: "Account-Based Marketing (ABM)",
     highlight:
-      "The operational backbone of every high-performing marketing team",
+      "Engage target accounts with intent-driven, personalized programs",
     description:
-      "We build your complete marketing operations function — including campaign management frameworks, data governance standards, UTM taxonomies, lead lifecycle definitions, quality assurance processes, and operational playbooks — creating the systematic foundation that allows your marketing team to execute at enterprise scale without chaos, inconsistency, or data errors.",
+      "We implement 6sense, Demandbase, Terminus, RollWorks, and Metadata.io — ICP definition, target account lists, intent signals, account advertising, engagement scoring, and sales-marketing alignment. Results: 85% higher target account engagement and 3X ROI on ABM investment.",
   },
-
   {
-    title: "Performance Marketing Management",
+    title: "Marketing Attribution & Analytics",
     highlight:
-      "Every pound of paid spend, working as hard as possible",
+      "Prove pipeline contribution and optimize every channel",
     description:
-      "We design, build, and manage enterprise paid media campaigns across Google Ads, Meta, LinkedIn, Programmatic Display, YouTube, TikTok, and Bing — using advanced bidding strategies, audience segmentation, creative testing, and attribution modelling to generate qualified pipeline at the most efficient cost per acquisition your market allows.",
+      "We implement Bizible (Marketo Measure), LeanData Attribution, Dreamdata, HockeyStack, and related stacks — multi-touch models, campaign taxonomy, ROI reporting, CAC, and executive dashboards. Outcomes: 100% ROI visibility, 40% better budget allocation, and 30% lower CAC.",
   },
-
   {
-    title: "Marketing Attribution & ROI Measurement",
+    title: "Marketing Operations (MOps)",
     highlight:
-      "Prove exactly what your marketing is worth",
+      "The operating system behind scalable, compliant marketing",
     description:
-      "We implement multi-touch attribution systems that track every customer touchpoint from first awareness to closed revenue — connecting marketing activity directly to pipeline and revenue outcomes. First touch, last touch, linear, position-based, and data-driven attribution models are all available, giving your CFO the commercial evidence they need to justify every marketing investment.",
+      "We architect MarTech stacks, integrations, data hygiene, campaign operations, GDPR/CCPA compliance, vendor management, and reporting — so campaigns launch faster with cleaner data. Results: 70% fewer manual processes and 50% faster campaign deployment.",
   },
-
   {
-    title: "Demand Capture vs Demand Creation Strategy",
+    title: "Content, CMS & Digital Asset Management",
     highlight:
-      "Win the buyers who are ready today and build the ones for tomorrow",
+      "Content and assets that fuel every campaign channel",
     description:
-      "We build dual-track marketing strategies that simultaneously capture existing demand through search and intent-driven channels while creating new demand through brand, content, and social channels — ensuring your pipeline is never dependent on buyers who are already looking and your brand is never invisible to buyers who are not yet aware they need you.",
+      "We implement CMS and DAM platforms including WordPress, Contentful, Drupal, Adobe Experience Manager, Bynder, and Brandfolder — so creative, web, and campaign teams share governed assets and publish with speed and brand consistency.",
   },
-
   {
-    title: "MarTech Stack Audit & Architecture",
+    title: "CDP & Marketing Data Infrastructure",
     highlight:
-      "The right tools, in the right configuration, connected correctly",
+      "Unified customer and prospect data for personalization and measurement",
     description:
-      "We audit your existing marketing technology stack against your commercial objectives, identify redundancy and gaps, and design the optimum architecture for your stage and ambition. We work across the full marketing technology landscape — CRM, automation, analytics, CDP, attribution, ABM, SEO, social, paid media, and content tools — ensuring every platform has a clear purpose and integrates seamlessly with every other.",
-  },
-
-  {
-    title: "Customer Data Platform Implementation",
-    highlight:
-      "One unified view of every customer, across every channel",
-    description:
-      "We implement Customer Data Platforms including Segment, Rudderstack, and Bloomreach that unify customer behavioural data from every touchpoint — website, email, paid media, CRM, and product — into one complete customer profile that powers personalisation, segmentation, and predictive marketing at enterprise scale.",
-  },
-
-  {
-    title: "Marketing Performance Dashboards",
-    highlight:
-      "Real-time intelligence for every marketing decision",
-    description:
-      "We build executive marketing dashboards using Looker, Tableau, Power BI, and Google Looker Studio that aggregate data from every marketing platform into one real-time view of performance — covering pipeline contribution, channel ROI, campaign performance, lead quality, funnel conversion rates, and brand health metrics — giving every stakeholder the exact intelligence they need to make faster, better decisions.",
-  },
-
-  {
-    title: "Conversion Rate Optimisation",
-    highlight:
-      "More revenue from the traffic you already have",
-    description:
-      "We implement systematic CRO programs covering landing page optimisation, A/B testing, multivariate experimentation, user behaviour analysis, heatmapping, session recording, and funnel analysis — continuously improving the percentage of visitors who become leads and leads who become customers, multiplying the value of every channel without increasing spend.",
-  },
-
-  {
-    title: "Email Marketing & Lifecycle Campaigns",
-    highlight:
-      "The highest ROI channel in enterprise marketing, done properly",
-    description:
-      "We design and deploy sophisticated email marketing programs covering welcome sequences, lead nurture flows, re-engagement campaigns, upsell and cross-sell sequences, and retention campaigns — with personalisation, behavioural triggers, dynamic content, deliverability optimisation, and continuous A/B testing built in from the start.",
+      "We implement Segment, mParticle, Tealium, Treasure Data, and analytics platforms (GA4, Adobe Analytics, Mixpanel, Amplitude) so marketing has one reliable data foundation for activation, attribution, and growth decisions.",
   },
 ];
+
 export default function Page() {
   return (
     <>
       <SubPageHero
         backgroundImage="/images/bg-image/Fold-bg.png"
-        headline="ATTRACT. NURTURE. CONVERT. COMPOUND."
-        subheadline="Enterprise marketing technology and operations infrastructure that generates qualified demand, nurtures it intelligently, converts it efficiently, and proves every penny of ROI.
-                  We build the marketing automation systems, technology stacks, paid media infrastructure, and analytics frameworks that transform marketing from a cost centre into the most measurable, accountable, and scalable growth function in your business.
-                "
+        headline="Marketing technology that generates pipeline and proves ROI"
+        subheadline="Build integrated marketing stacks that automate campaigns, nurture leads, prove attribution, and align marketing with revenue outcomes."
       />
       <OurVision
         eyebrow="OUR VISION"
         leftTitle={[
-          "MARKETING",
-          "THAT PAYS",
-          "FOR  ITSELF.",
-          "THEN  MULTIPLES.",
+          "ATTRACT.",
+          "NURTURE.",
+          "PROVE.",
+          "SCALE.",
         ]}
-        title="A marketing function that leadership trusts completely."
-        description="Marketing earns its seat at the board table when it can prove its commercial contribution with the same precision as sales. We build marketing systems where every campaign is measured, every channel is attributed, and every investment is justified by a pipeline or revenue outcome — transforming marketing from an uncertain cost into the most accountable growth engine in your business."
+        title="Marketing that leadership can measure and trust."
+        description="Modern marketing needs technology spanning automation, advertising, content, analytics, and ABM. NineXFold implements marketing stacks that generate measurable pipeline contribution and prove marketing ROI — from Marketo and HubSpot to 6sense, attribution platforms, and executive dashboards."
         image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
         eyebrow="OUR VALUES"
         title="The principles behind every marketing system we build."
-        description="Marketing without commercial accountability is just spend. Every system we architect is grounded in these four commitments to ensure every investment is measurable, scalable, and built to compound."
+        description="Marketing without commercial accountability is just spend. Every system we architect is measurable, scalable, and aligned to revenue."
         quote="Attribution Before Amplification"
-        quoteDescription="We never scale what we cannot measure. Every campaign, channel, and piece of content has measurement built in before a single pound is spent on amplification."
+        quoteDescription="We never scale what we cannot measure. Every campaign and channel has measurement built in before budget is amplified."
         tags={[
           "Measurement",
           "Accountability",
-          "Clarity",
+          "Alignment",
         ]}
         image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
       />

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "@/app/ninexFoldServices/OurVision";
 import ValuesSection from "@/app/ninexFoldServices/ValuesSection";
@@ -9,19 +10,41 @@ import {
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
 
+export const metadata: Metadata = {
+  title: "Brand Intelligence System | Positioning, Architecture & Category Ownership | NineXFold",
+  description:
+    "Build enterprise brand architecture, positioning, and messaging systems that define your category, lift share of voice, and justify premium pricing. Schedule a Brand Intelligence Assessment.",
+  keywords: [
+    "brand intelligence",
+    "brand positioning",
+    "brand architecture",
+    "category ownership",
+    "share of voice",
+    "brand messaging framework",
+    "go-to-market strategy",
+    "brand health monitoring",
+    "NineXFold",
+  ],
+  openGraph: {
+    title: "Brand Intelligence System | NineXFold",
+    description:
+      "Strategic brand systems that position you to own the category — architecture, narrative, identity, and market activation.",
+  },
+};
+
 const metricGroups = [
   {
     icon: <AlertTriangle size={22} strokeWidth={1.5} />,
     title: "Challenge",
     items: [
-      ["8", "different CRM systems and disconnected data"],
-      ["50%", "forecast accuracy missing quarterly targets"],
-      ["0", "unified customer view across products"],
-      ["180D", "sales cycles increasing and win rates declining"],
-      ["BLIND", "executive team lacking revenue visibility"],
+      ["WEAK", "positioning indistinguishable from competitors"],
+      ["LOW", "share of voice versus category leaders"],
+      ["0", "unified brand narrative across markets"],
+      ["FRAG", "inconsistent messaging across teams and channels"],
+      ["PRICE", "unable to defend premium pricing in deals"],
     ],
     footerTitle: "BUSINESS PAIN",
-    footerText: "FRAGMENTED. DISCONNECTED.",
+    footerText: "GENERIC. INVISIBLE. COMMODITISED.",
     showArrow: true,
   },
 
@@ -29,14 +52,14 @@ const metricGroups = [
     icon: <Cpu size={22} strokeWidth={1.5} />,
     title: "Solution",
     items: [
-      ["CRM", "Unified Salesforce Revenue Cloud platform"],
-      ["AI", "Clari predictive forecasting and analytics"],
-      ["GONG", "Conversation intelligence and coaching"],
-      ["DATA", "Custom attribution and waterfall reporting"],
-      ["LIVE", "Executive dashboards with real-time visibility"],
+      ["POS", "Category positioning and competitive differentiation"],
+      ["MSG", "Unified brand narrative and messaging framework"],
+      ["ARCH", "Brand architecture and portfolio hierarchy"],
+      ["ID", "Visual identity and voice systems at scale"],
+      ["SOV", "Brand health and share-of-voice monitoring"],
     ],
     footerTitle: "IMPLEMENTED SYSTEMS",
-    footerText: "CONNECTED. INTELLIGENT.",
+    footerText: "DEFINED. DIFFERENTIATED.",
     showArrow: false,
   },
 
@@ -44,18 +67,19 @@ const metricGroups = [
     icon: <TrendingUp size={22} strokeWidth={1.5} />,
     title: "Results",
     items: [
-      ["95%", "forecast accuracy improvement"],
-      ["$300M", "revenue impact in year one"],
-      ["60%", "faster sales cycles"],
-      ["40%", "larger average deal sizes"],
-      ["95%", "sales adoption within 30 days"],
-      ["3M", "ROI realization timeline"],
+      ["2X", "brand consideration in target ICP segments"],
+      ["45%", "increase in category share of voice"],
+      ["#1", "owned position in primary buying category"],
+      ["30%", "improvement in win rate on branded deals"],
+      ["25%", "lift in average deal pricing power"],
+      ["90D", "to coherent brand rollout across channels"],
     ],
     footerTitle: "BUSINESS OUTCOMES",
-    footerText: "MEASURABLE. SCALABLE.",
+    footerText: "OWNED. DEFENSIBLE.",
     showArrow: false,
   },
 ];
+
 const cards = [
   {
     title: "Brand Architecture & Hierarchy",
@@ -129,12 +153,13 @@ const cards = [
       "We plan and execute complete brand launch and relaunch campaigns — across owned, earned, and paid channels — that introduce your brand positioning to the market with the impact it deserves. From internal launch events and sales team briefings to PR campaigns, social launches, and paid amplification, we manage every element of activation so your brand lands as powerfully as it was built.",
   },
 ];
+
 export default function Page() {
   return (
     <>
       <SubPageHero
         backgroundImage="/images/bg-image/Fold-bg.png"
-        headline="DEFINE. POSITION. OWN THE CATEGORY."
+        headline="Define, position, and own the category your buyers remember"
         subheadline="Enterprise brand architecture that transforms your company from a market participant into a category-defining, premium-positioned, fiercely differentiated brand that commands attention, justifies premium pricing, and attracts the clients you actually want.
                     We build the complete strategic brand foundation — architecture, positioning, identity systems, messaging frameworks, narrative, and go-to-market strategy — ensuring every customer touchpoint tells one powerful, coherent story that your competition cannot replicate.
         "

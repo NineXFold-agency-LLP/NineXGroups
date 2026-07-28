@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "../OurVision";
 import ValuesSection from "../ValuesSection";
@@ -9,176 +10,150 @@ import {
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
 
+export const metadata: Metadata = {
+  title: "DevOps & Automation | CI/CD, Platform Engineering & SRE | NineXDevOps",
+  description:
+    "Accelerate software delivery with CI/CD pipelines, Infrastructure as Code, container platforms, and SRE practices that cut release cycles and improve reliability. Request a DevOps Assessment.",
+  keywords: [
+    "DevOps",
+    "CI/CD",
+    "Infrastructure as Code",
+    "Kubernetes",
+    "GitOps",
+    "SRE",
+    "automation",
+    "NineXDevOps",
+  ],
+  openGraph: {
+    title: "DevOps & Automation | NineXDevOps",
+    description:
+      "Enterprise DevOps automation that accelerates delivery — CI/CD, IaC, containers, and SRE.",
+  },
+};
+
 const metricGroups = [
   {
     icon: <BarChart3 size={22} strokeWidth={1.5} />,
-    title: "Client Success Story",
+    title: "Challenge",
     items: [
-      ["$2B", "financial services enterprise transformed through AI agents"],
-      ["200+", "data sources monitored continuously by research agents"],
-      ["500+", "compliance documents processed weekly through automation"],
-      ["8-Month", "enterprise ROI achieved after deployment"],
+      ["6M", "average release cycle slowing innovation"],
+      ["40%", "of releases requiring emergency hotfixes"],
+      ["MANUAL", "infrastructure provisioning taking weeks"],
+      ["SILO", "dev, QA, and ops working in isolation"],
+      ["LOW", "deployment confidence and rollback risk"],
     ],
-    footerTitle: "AI AGENT DEPLOYMENT PROGRAMME",
-    footerText: "INTELLIGENT. AUTONOMOUS.",
+    footerTitle: "DELIVERY FRICTION",
+    footerText: "SLOW. FRAGILE.",
     showArrow: true,
   },
   {
     icon: <SlidersHorizontal size={22} strokeWidth={1.5} />,
-    title: "Operational Results",
+    title: "Solution",
     items: [
-      ["65%", "reduction in analyst time spent on data gathering"],
-      ["55%", "increase in sales rep selling time"],
-      ["80%", "reduction in compliance document processing time"],
-      ["$15M", "annual productivity savings across deployments"],
+      ["CICD", "End-to-end CI/CD with automated testing"],
+      ["IaC", "Terraform and GitOps infrastructure"],
+      ["K8S", "Kubernetes platform standardization"],
+      ["OBS", "Observability with Prometheus and Datadog"],
+      ["SRE", "SLO-driven reliability practices"],
+      ["12M", "enterprise DevOps transformation"],
     ],
-    footerTitle: "MEASURABLE IMPACT",
-    footerText: "FASTER. MORE EFFICIENT.",
+    footerTitle: "DEVOPS PLATFORM",
+    footerText: "AUTOMATED. RELIABLE.",
     showArrow: false,
   },
   {
     icon: <User size={22} strokeWidth={1.5} />,
-    title: "AI Agent Infrastructure",
+    title: "Results",
     items: [
-      ["Research\nAgents", "daily intelligence briefings from live market data"],
-      ["Sales\nAgents", "automated ICP research and personalised outreach"],
-      ["Compliance\nAgents", "continuous monitoring of contracts and communications"],
-      ["Zero", "compliance incidents since monitoring deployment"],
+      ["10X", "faster release frequency"],
+      ["80%", "reduction in deployment failures"],
+      ["90%", "test automation coverage"],
+      ["99.99%", "uptime on critical services"],
+      ["70%", "faster environment provisioning"],
+      ["9M", "ROI realization"],
     ],
-    footerTitle: "ENTERPRISE AI GOVERNANCE",
-    footerText: "SECURE. SCALABLE.",
+    footerTitle: "DEVOPS IMPACT",
+    footerText: "FASTER. STABLE.",
     showArrow: false,
   },
 ];
+
 const cards = [
   {
-    title: "AI Agent Strategy & Use Case Identification",
+    title: "CI/CD Pipeline Engineering",
     highlight:
-      "Identify the highest-value agent deployment opportunities in your specific business",
+      "Ship from commit to production with confidence",
     description:
-      "We conduct systematic AI agent opportunity assessments — mapping every repetitive, research-intensive, and multi-step workflow in your organisation — to identify where autonomous agents will deliver the greatest commercial impact. The output is a prioritised agent deployment roadmap with ROI models, technical requirements, and governance frameworks for every use case identified.",
+      "We design and implement CI/CD pipelines using GitHub Actions, GitLab CI, Jenkins, Azure DevOps, and CircleCI — automated build, test, security scanning, artifact management, and progressive delivery (blue-green, canary). Outcomes: dramatically shorter lead time and fewer failed deployments.",
   },
-
   {
-    title: "Research & Intelligence Agents",
+    title: "Infrastructure as Code & GitOps",
     highlight:
-      "Agents that gather, synthesise, and deliver intelligence without a human running a single search",
+      "Every environment reproducible, versioned, and reviewable",
     description:
-      "We build research agents that autonomously monitor news, analyse competitor activity, track regulatory changes, summarise industry reports, gather market intelligence, and deliver synthesised briefings to the right people at the right time — giving your strategy, sales, and product teams the intelligence they need without consuming the human hours that intelligence gathering typically requires.",
+      "We implement Terraform, Pulumi, CloudFormation, Ansible, and GitOps with Argo CD / Flux — modular IaC, policy-as-code, secret management, and automated drift detection so infrastructure changes are as disciplined as application code.",
   },
-
   {
-    title: "Sales Prospecting & Outreach Agents",
+    title: "Container & Kubernetes Platforms",
     highlight:
-      "Autonomous agents that identify, research, and initiate contact with your ideal prospects",
+      "Standardize how applications run across clouds",
     description:
-      "We deploy sales prospecting agents using Clay, Apollo, and custom architectures — that autonomously identify target companies matching your ICP, research key contacts, enrich prospect data from multiple sources, personalise outreach messages at scale, trigger follow-up sequences based on engagement signals, and hand off warm prospects to human sellers at the optimal moment. Your pipeline fills while your team sleeps.",
+      "We build Kubernetes platforms (EKS, AKS, GKE, OpenShift) with Helm/Kustomize, service mesh, ingress, autoscaling, and cluster governance — so teams deploy consistently without reinventing platform plumbing.",
   },
-
   {
-    title: "Customer Service & Support Agents",
+    title: "Release Automation & Continuous Delivery",
     highlight:
-      "Agents that resolve customer issues end-to-end without escalating to a human agent",
+      "Safe, frequent releases with instant rollback paths",
     description:
-      "We build customer service agents that go beyond simple FAQ chatbots — agents that access your CRM, check order status, process refund requests, update account information, book appointments, troubleshoot technical issues using your knowledge base, and resolve complex multi-step customer requests entirely autonomously. Escalation to humans happens only when genuine complexity requires it.",
+      "We implement release orchestration, feature flags, environment promotion workflows, and automated rollback — enabling daily or hourly releases without sacrificing stability.",
   },
-
   {
-    title: "Data Processing & Analysis Agents",
+    title: "Observability & Site Reliability Engineering",
     highlight:
-      "Agents that transform raw data into structured intelligence without a data analyst in the loop",
+      "SLOs, alerting, and incident response that protect uptime",
     description:
-      "We build data processing agents that autonomously extract data from multiple sources, clean and normalise it, identify patterns and anomalies, generate summary reports, flag exceptions for human review, and update dashboards — replacing the manual data processing workflows that consume analyst time without adding analytical value. Every data processing task that follows a repeatable pattern is a candidate for agent automation.",
+      "We implement logging, metrics, and tracing with Prometheus, Grafana, Datadog, ELK, and OpenTelemetry — plus SRE practices, on-call design, and error budgets so reliability becomes measurable and managed.",
   },
-
   {
-    title: "Workflow Orchestration Agents",
+    title: "DevSecOps & Pipeline Security",
     highlight:
-      "Agents that coordinate complex multi-step business processes across multiple systems simultaneously",
+      "Security checks embedded in every build",
     description:
-      "We design orchestration agents that manage complex cross-system workflows — coordinating actions across CRM, ERP, communication platforms, file systems, and external APIs — with conditional logic, error handling, retry mechanisms, and human escalation protocols built in. Multi-day manual processes become same-hour automated workflows. Cross-system coordination that required multiple human handoffs happens in seconds.",
-  },
-
-  {
-    title: "Code Generation & Development Agents",
-    highlight:
-      "Agents that accelerate software development by handling the repetitive coding work",
-    description:
-      "We deploy development assistance agents that generate boilerplate code, write unit tests, document functions and APIs, review code for common issues, suggest refactoring improvements, and produce deployment scripts — freeing your engineering team from the low-value development tasks that consume disproportionate time and allowing them to focus on the architectural and problem-solving work that genuinely requires human intelligence.",
-  },
-
-  {
-    title: "Content Production Agents",
-    highlight:
-      "Agents that produce on-brand content at volume without a human writer for every piece",
-    description:
-      "We build content production agents trained on your brand voice, style guidelines, audience intelligence, and content strategy — producing SEO-optimised blog posts, social media content, email newsletters, product descriptions, case study drafts, and ad copy at scale. Human editors review and refine. Agents produce the volume. The combination delivers content output at a scale that was previously only possible with content teams five times the size.",
-  },
-
-  {
-    title: "Compliance & Audit Agents",
-    highlight:
-      "Agents that monitor compliance continuously instead of auditing it periodically",
-    description:
-      "We deploy compliance monitoring agents that continuously scan contracts, communications, transactions, and system configurations for compliance violations, policy deviations, and risk signals — delivering real-time alerts to the right people before issues escalate into regulatory problems. Compliance moves from a periodic audit function to a continuous operational intelligence capability.",
-  },
-
-  {
-    title: "Multi-Agent System Architecture",
-    highlight:
-      "Networks of specialised agents that collaborate to solve problems no single agent can handle alone",
-    description:
-      "We architect and deploy multi-agent systems where specialised agents — researcher, writer, analyst, reviewer, coordinator — work together on complex tasks, passing outputs between agents, validating each other's work, and producing results that require the combined capabilities of the full agent network. Multi-agent architectures unlock the automation of genuinely complex enterprise workflows that single-agent approaches cannot handle.",
-  },
-
-  {
-    title: "Agent Monitoring, Governance & Safety",
-    highlight:
-      "The operational framework that keeps every AI agent operating within defined business boundaries",
-    description:
-      "We build agent governance frameworks covering output monitoring, behaviour auditing, performance tracking, cost management, safety guardrails, human-in-the-loop escalation protocols, and kill switch infrastructure — ensuring every agent we deploy operates within the boundaries your enterprise requires, improves continuously based on performance data, and can be overridden or stopped instantly when circumstances demand it.",
-  },
-
-  {
-    title: "Enterprise System Integration for Agents",
-    highlight:
-      "Connect every agent to every enterprise system it needs to take meaningful action",
-    description:
-      "We build the integration architecture that connects AI agents to your CRM, ERP, HRIS, communication platforms, databases, external APIs, and cloud services — using secure authentication, rate limiting, permission scoping, and audit logging to ensure agents interact with enterprise systems safely, auditably, and within the precise permission boundaries each agent has been granted.",
+      "We integrate SAST, DAST, dependency scanning, container image scanning, and secrets detection into pipelines — shifting security left without slowing delivery.",
   },
 ];
+
 export default function Page() {
   return (
     <>
       <SubPageHero
         backgroundImage="/images/bg-image/DevOps-bg.png"
-        headline="Enterprise DevOps Automation that accelerates your business."
-        subheadline="Unlock enterprise DevOps automation that accelerates your business. We design, architect, and deploy custom AI agents using the most advanced agentic frameworks available — LangChain, LangGraph, AutoGen, CrewAI, and custom proprietary architectures — connected to your enterprise systems, data sources, and communication channels. Every agent we build is production-grade, commercially justified, and governed by the guardrails your enterprise requires.
-                    "
+        headline="DevOps automation that accelerates delivery without sacrificing reliability"
+        subheadline="Build CI/CD, Infrastructure as Code, container platforms, and SRE practices that cut release cycles, raise deployment confidence, and keep critical systems resilient at scale."
       />
       <OurVision
         eyebrow="OUR VISION"
         leftTitle={[
-          "DEVOPS",
-          "THAT - WORKS.",
-          "BUSINESSES",
-          "THAT - WIN.",
+          "BUILD.",
+          "TEST.",
+          "RELEASE.",
+          "IMPROVE.",
         ]}
-        title="A future where the most productive enterprises are not those with the most employees but those with the most capable AI agents."
-        description="The AI agent revolution is not about replacing humans. It is about deploying autonomous intelligence to handle the high-volume, repetitive, research-intensive work that currently consumes your team's most valuable hours — freeing every human in your organisation to focus on the work that genuinely requires human judgment, creativity, and relationship. We build the agents that make that future a present reality."
+        title="Software delivery as a competitive advantage."
+        description="NineXDevOps implements enterprise DevOps and automation spanning CI/CD, IaC, Kubernetes platforms, release automation, observability, and DevSecOps — so engineering teams ship faster with higher quality and lower operational risk."
         image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
         eyebrow="OUR VALUES"
-        title="The principles behind every AI agent we deploy."
-        description="Agents built without principles create risk at scale. Every deployment we take on is grounded in these four commitments to ensure what we build is commercially justified, properly governed, production-grade, and built to compound in capability."
-        quote="Agents Earn Their Deployment"
-        quoteDescription="Every agent we deploy must justify its existence with a measurable commercial outcome — time saved, pipeline generated, cost reduced, or revenue created. Agents deployed for novelty are experiments. Agents deployed for outcomes are investments."
+        title="The principles behind every DevOps platform we build."
+        description="Automation without reliability creates faster failure. Every engagement balances velocity with safety and observability."
+        quote="Automate Everything That Should Be Automated"
+        quoteDescription="We eliminate manual handoffs in build, test, deploy, and provision — while keeping humans in control of risk decisions and incident response."
         tags={[
-          "Commercial",
-          "Justification",
-          "Outcomes",
+          "Velocity",
+          "Reliability",
+          "Automation",
         ]}
         image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
       />

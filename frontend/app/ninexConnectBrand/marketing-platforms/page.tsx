@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "../OurVision";
 import ValuesSection from "../ValuesSection";
@@ -9,153 +10,149 @@ import {
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
 
+export const metadata: Metadata = {
+  title: "Marketing Platforms | Marketing Automation & Growth Stacks | NineXConnect",
+  description:
+    "Design and implement marketing automation and growth platforms — Marketo, HubSpot, Salesforce Marketing Cloud, Adobe — that nurture leads and prove pipeline contribution. Explore Marketing Platforms.",
+  keywords: [
+    "marketing platforms",
+    "marketing automation",
+    "Marketo",
+    "HubSpot",
+    "Salesforce Marketing Cloud",
+    "lead nurturing",
+    "NineXConnect",
+  ],
+  openGraph: {
+    title: "Marketing Platforms | NineXConnect",
+    description:
+      "Marketing automation platforms that generate pipeline and prove ROI.",
+  },
+};
+
 const metricGroups = [
   {
     icon: <BarChart3 size={22} strokeWidth={1.5} />,
-    title: "Client Success Story",
+    title: "Challenge",
     items: [
-      ["10,000+", "IoT sensors deployed across production operations"],
-      ["45", "production lines connected through real-time monitoring"],
-      ["95%", "failure prediction accuracy through ML models"],
-      ["Industry\n4.0", "lighthouse facility recognition by WEF"],
+      ["8+", "disconnected marketing tools"],
+      ["0", "reliable multi-touch attribution"],
+      ["MANUAL", "campaigns built without reusable workflows"],
+      ["LOW", "lead-to-opportunity conversion"],
+      ["GAP", "CRM and marketing data out of sync"],
     ],
-    footerTitle: "INDUSTRIAL IOT TRANSFORMATION",
-    footerText: "PREDICTIVE. CONNECTED.",
+    footerTitle: "MARTECH CHAOS",
+    footerText: "DISCONNECTED. MANUAL.",
     showArrow: true,
   },
   {
     icon: <SlidersHorizontal size={22} strokeWidth={1.5} />,
-    title: "Operational Results",
+    title: "Solution",
     items: [
-      ["40%", "reduction in unplanned downtime"],
-      ["$32M", "annual savings from predictive maintenance"],
-      ["60%", "faster quality inspection processes"],
-      ["$80M", "total annual savings across operations"],
+      ["MAP", "Marketo / HubSpot / Marketing Cloud"],
+      ["NURTURE", "Lifecycle nurture programs"],
+      ["SCORE", "Lead scoring aligned to sales"],
+      ["SYNC", "Bi-directional CRM integration"],
+      ["ROI", "Campaign and attribution dashboards"],
+      ["5M", "platform implementation"],
     ],
-    footerTitle: "MEASURABLE IMPACT",
-    footerText: "INTELLIGENT. EFFICIENT.",
+    footerTitle: "GROWTH PLATFORM",
+    footerText: "AUTOMATED. ATTRIBUTABLE.",
     showArrow: false,
   },
   {
     icon: <User size={22} strokeWidth={1.5} />,
-    title: "Technology Infrastructure",
+    title: "Results",
     items: [
-      ["AWS\nIoT", "enterprise sensor data ingestion platform"],
-      ["Computer\nVision", "automated quality inspection system"],
-      ["Digital\nTwin", "real-time production simulation and optimisation"],
-      ["Real-Time\nDashboards", "live operational visibility for plant management"],
+      ["60%", "increase in marketing qualified leads"],
+      ["40%", "improvement in lead-to-opportunity"],
+      ["50%", "reduction in cost per lead"],
+      ["70%", "time savings through automation"],
+      ["100%", "visibility into campaign ROI"],
+      ["6M", "ROI realization"],
     ],
-    footerTitle: "SMART MANUFACTURING",
-    footerText: "AUTOMATED. SCALABLE.",
+    footerTitle: "MARKETING IMPACT",
+    footerText: "SCALABLE. PROVEN.",
     showArrow: false,
   },
 ];
+
 const cards = [
   {
-    title: "IoT Platform Architecture & Implementation",
+    title: "Marketing Automation Platform Implementation",
     highlight:
-      "The complete connected device infrastructure from sensor to cloud analytics",
+      "Marketo, HubSpot, Pardot, and Salesforce Marketing Cloud done right",
     description:
-      "We design and implement enterprise IoT platforms using AWS IoT, Azure IoT Hub, Google Cloud IoT, PTC ThingWorx, Siemens MindSphere, and custom architectures — covering device connectivity, protocol management across MQTT, AMQP, OPC-UA, and Modbus, data ingestion at scale, device management, security, and the cloud connectivity that makes every sensor reading analytically accessible within seconds of capture.",
+      "We implement marketing automation with email programs, forms, landing pages, lead scoring, CRM sync, and governance — so campaigns run reliably and sales receives sales-ready leads.",
   },
-
   {
-    title: "Industrial IoT for Manufacturing",
+    title: "Lead Nurture & Lifecycle Programs",
     highlight:
-      "Smart factory implementation that transforms operational data into operational excellence",
+      "Move prospects from awareness to opportunity automatically",
     description:
-      "We implement Industrial IoT systems for manufacturing covering production monitoring, OEE measurement, quality sensor integration, energy consumption monitoring, environmental compliance tracking, and the real-time operational dashboards that give plant managers immediate visibility into every production metric. Industry 4.0 manufacturing is not a concept — it is a set of specific technologies we implement to specific operational outcomes.",
+      "We design nurture tracks by persona and stage — welcome, education, product, re-engagement — with progressive profiling and behavioral triggers that improve conversion without more media spend.",
   },
-
   {
-    title: "Predictive Maintenance Systems",
+    title: "Lead Scoring & Sales Handoff",
     highlight:
-      "Prevent equipment failure before it happens — using the data the equipment itself generates",
+      "Align marketing and sales on what 'ready' means",
     description:
-      "We build predictive maintenance platforms covering vibration analysis, thermal monitoring, motor current signature analysis, acoustic emission monitoring, and the ML models trained on equipment sensor data that predict failure hours or days before it occurs — reducing unplanned downtime by 50%, maintenance costs by 30%, and spare parts inventory by 40% through the shift from reactive and scheduled maintenance to condition-based prediction.",
+      "We build demographic and behavioral scoring models, SLAs, and routing so high-intent leads reach the right rep fast — and recycled leads return to nurture cleanly.",
   },
-
   {
-    title: "Digital Twin Development",
+    title: "Campaign Operations & Templates",
     highlight:
-      "A real-time virtual replica of every physical asset, process, and facility you operate",
+      "Launch faster with reusable, brand-safe building blocks",
     description:
-      "We design and build digital twin implementations — from individual asset twins for critical equipment through process twins for production lines and facility twins for complete buildings and campuses — using Azure Digital Twins, AWS IoT TwinMaker, and custom platforms. Digital twins enable the simulation, optimisation, and predictive analysis of physical operations without the cost and risk of experimenting on the physical assets themselves.",
+      "We create email templates, modular content blocks, UTM standards, and campaign playbooks so marketing ops can deploy programs in days instead of weeks.",
   },
-
   {
-    title: "Edge Computing Infrastructure",
+    title: "Marketing Data & CRM Integration",
     highlight:
-      "Process data where it is generated — not after a round trip to the cloud",
+      "One lifecycle view from first click to closed-won",
     description:
-      "We design and deploy edge computing infrastructure using AWS Greengrass, Azure IoT Edge, and custom edge platforms — processing sensor data, running ML inference, executing control logic, and storing operational data at the edge of your network where latency, bandwidth, and connectivity requirements make cloud-only processing impractical. Edge computing is essential for manufacturing automation, autonomous vehicles, remote operations, and any use case where millisecond response time is a requirement.",
+      "We integrate marketing platforms with CRM, webinars, events, and advertising — cleaning fields, syncing statuses, and eliminating the data gaps that break attribution.",
   },
-
   {
-    title: "Smart Building & Facilities Management",
+    title: "Attribution & Performance Dashboards",
     highlight:
-      "Connect every building system into one intelligent facilities management platform",
+      "Prove pipeline contribution and optimize budget",
     description:
-      "We implement smart building IoT platforms covering HVAC and environmental monitoring, energy management and optimisation, occupancy sensing and space utilisation, security system integration, predictive maintenance for building equipment, and the sustainability reporting infrastructure that tracks carbon, energy, and water consumption against corporate sustainability targets.",
-  },
-
-  {
-    title: "Supply Chain Visibility & Asset Tracking",
-    highlight:
-      "Know where every asset, every shipment, and every vehicle is at every moment",
-    description:
-      "We implement supply chain visibility platforms and asset tracking systems using GPS, RFID, BLE, and cellular connectivity — providing real-time location, condition, and custody information for every asset in your supply chain. Track vehicles, shipping containers, high-value equipment, pharmaceutical cold chain, and any other asset where location and condition visibility has commercial or compliance value.",
-  },
-
-  {
-    title: "IoT Data Platform & Analytics",
-    highlight:
-      "Transform billions of sensor readings into operational intelligence",
-    description:
-      "We build the IoT data platforms that store, process, and analyse the massive data volumes that connected device networks generate — using time-series databases including InfluxDB and TimescaleDB, streaming analytics with Apache Kafka and Flink, and the BI and AI layers that transform raw telemetry into operational dashboards, predictive models, and automated control decisions.",
-  },
-
-  {
-    title: "IoT Security Architecture",
-    highlight:
-      "Secure every connected device in your network — at the scale IoT deployments demand",
-    description:
-      "We implement IoT security frameworks covering device identity and authentication, encrypted communications, secure firmware update mechanisms, network segmentation, anomaly detection, and the vulnerability management processes that keep thousands or millions of connected devices secure against the expanding attack surface they create. IoT security is fundamentally different from IT security and requires specialised architecture and tooling.",
+      "We implement campaign tracking, multi-touch attribution, and executive dashboards so leadership sees which programs create revenue — not just clicks.",
   },
 ];
+
 export default function Page() {
   return (
     <>
       <SubPageHero
         backgroundImage="/images/bg-image/Connect-bg.png"
-        headline="MARKETING AUTOMATION & GROWTH PLATFORMS"
-        subheadline="We design and implement marketing automation and growth platforms that accelerate customer acquisition, improve engagement, and deliver measurable improvements in marketing performance.
-                      Salesforce Marketing Cloud, HubSpot, Adobe Experience Cloud, Marketo, Pardot, and custom marketing automation platforms are the central nervous system of modern marketing operations — and we engineer these platforms to align with your specific marketing strategies, revenue models, and go-to-market approaches.
-                    "
+        headline="Marketing platforms that generate pipeline and prove ROI"
+        subheadline="We design and implement marketing automation and growth platforms — Salesforce Marketing Cloud, HubSpot, Marketo, Adobe, and related stacks — that nurture leads, align with sales, and attribute revenue outcomes."
       />
       <OurVision
         eyebrow="OUR VISION"
         leftTitle={[
-          "CONNECTED.",
-          "SECURED.",
-          "INTELLEGENCE",
-          "WINS.",
+          "ATTRACT.",
+          "NURTURE.",
+          "CONVERT.",
+          "PROVE.",
         ]}
-        title="A future where every physical asset in every enterprise is continuously monitored, continuously optimised, and continuously improving — without human intervention for anything the machines can manage themselves."
-        description="The physical world is becoming digital. Every machine, every vehicle, every building, and every product is becoming a data source. The enterprises that build the infrastructure to capture, process, and act on that data will make better operational decisions, prevent more failures, waste fewer resources, and improve faster than those that are still managing physical operations without digital intelligence."
+        title="Marketing technology that leadership can measure and trust."
+        description="NineXConnect implements marketing platforms that turn campaigns into a repeatable growth system — with automation, scoring, CRM alignment, and attribution that connect every pound of spend to pipeline."
         image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
         eyebrow="OUR VALUES"
-        title="The principles behind every IoT system we architect."
-        description="IoT infrastructure built without principles generates data nobody acts on and devices nobody can secure. Every engagement we take on is grounded in these four commitments to ensure what we build is actionable, resilient, secure by design, and proven before it scales."
-        quote="Sensor Data is Only Valuable at the Point of Action"
-        quoteDescription="Raw sensor readings are not insight. We build the complete data pipeline — from sensor to model to automated action or human alert — ensuring every data point captured drives a specific operational decision."
+        title="The principles behind every marketing platform we implement."
+        description="Platforms without process create more clutter. We implement for adoption, data quality, and commercial accountability."
+        quote="Pipeline Is the Metric That Matters"
+        quoteDescription="We configure every workflow and report to connect marketing activity to pipeline and revenue — not vanity metrics."
         tags={[
-          "Action",
-          "Intelligence",
-          "Outcome",
+          "Automation",
+          "Attribution",
+          "Alignment",
         ]}
         image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
       />

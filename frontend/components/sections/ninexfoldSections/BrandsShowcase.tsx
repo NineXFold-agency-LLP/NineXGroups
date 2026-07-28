@@ -29,7 +29,7 @@ const brands = [
   {
     name: "NineXHoomie",
     image: "/images/brands/hoomie.png",
-    description: "Smart real estate experiences.",
+    description: "Smart hotel management, simplified.",
   },
 ];
 

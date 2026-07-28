@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import type { CSSProperties, ComponentType, SVGProps } from "react";
 
@@ -53,27 +54,15 @@ const PeopleIcon = (props: IconProps) => (
 );
 
 const XLogo = ({ style }: { style?: CSSProperties }) => (
-  <svg viewBox="0 0 100 100" style={style} aria-hidden>
-    <defs>
-      <linearGradient id="nx-x" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stopColor="#3E7BFF" />
-        <stop offset="0.55" stopColor="#2A4DE6" />
-        <stop offset="1" stopColor="#4322C8" />
-      </linearGradient>
-    </defs>
-    <path
-      d="M24 16 L82 84"
-      stroke="url(#nx-x)"
-      strokeWidth="17"
-      strokeLinecap="round"
-    />
-    <path
-      d="M82 16 L24 84"
-      stroke="url(#nx-x)"
-      strokeWidth="17"
-      strokeLinecap="round"
-    />
-  </svg>
+  <Image
+    src="/ninex.png"
+    alt="NineXGroup"
+    width={120}
+    height={120}
+    className="rounded-full object-contain"
+    style={style}
+    aria-hidden
+  />
 );
 
 /* ------------------------------------------------------------------ */

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "../OurVision";
 import ValuesSection from "../ValuesSection";
@@ -8,6 +9,27 @@ import {
   User,
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
+
+export const metadata: Metadata = {
+  title: "Custom Software Development | Enterprise & Proprietary Platforms | NineXDevOps",
+  description:
+    "Design and build bespoke enterprise software — custom applications, proprietary platforms, legacy modernisation, and industry-specific systems. Own your competitive advantage with NineXDevOps.",
+  keywords: [
+    "custom software development",
+    "enterprise applications",
+    "proprietary platforms",
+    "legacy modernisation",
+    "BPM systems",
+    "API-first architecture",
+    "cloud-native software",
+    "NineXDevOps",
+  ],
+  openGraph: {
+    title: "Custom Software Development | NineXDevOps",
+    description:
+      "Bespoke enterprise software built to your requirements — workflows, platforms, and systems off-the-shelf products cannot deliver.",
+  },
+};
 
 const metricGroups = [
   {

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import type { ComponentType, ReactNode, SVGProps } from "react";
 
@@ -49,17 +50,18 @@ const Wordmark = ({ className }: { className?: string }) => (
   </span>
 );
 
-/** X mark — exact logo gradient by default */
-const BrandX = ({ className, style, from = CYAN, to = BLUE }: { className?: string; style?: React.CSSProperties; from?: string; to?: string }) => {
-  const id = `bx-${from}-${to}`.replace(/[^a-z0-9]/gi, "");
-  return (
-    <svg viewBox="0 0 100 100" className={className} style={style} aria-hidden>
-      <defs><linearGradient id={id} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor={from} /><stop offset="1" stopColor={to} /></linearGradient></defs>
-      <path d="M24 16 82 84" stroke={`url(#${id})`} strokeWidth="15" strokeLinecap="round" />
-      <path d="M82 16 24 84" stroke={`url(#${id})`} strokeWidth="15" strokeLinecap="round" />
-    </svg>
-  );
-};
+/** NineX brand mark */
+const BrandX = ({ className, style }: { className?: string; style?: React.CSSProperties; from?: string; to?: string }) => (
+  <Image
+    src="/ninex.png"
+    alt=""
+    width={256}
+    height={256}
+    className={`object-contain ${className ?? ""}`}
+    style={style}
+    aria-hidden
+  />
+);
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                           */
@@ -167,7 +169,7 @@ export default function ValuesSection() {
                   animate={reduce ? {} : { y: [0, -8, 0] }}
                   transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
                 >
-                  <BrandX className="h-14 w-14 sm:h-20 sm:w-20" from="rgba(255,255,255,0.55)" to="rgba(255,255,255,0.12)" />
+                  <BrandX className="h-14 w-14 rounded-xl sm:h-20 sm:w-20" />
                 </motion.div>
               </div>
             </Reveal>
@@ -377,7 +379,7 @@ export default function ValuesSection() {
           <Reveal delay={0.1}>
             <div className="relative h-full overflow-hidden rounded-[22px] p-6 sm:p-9" style={{ background: DARK, minHeight: 280 }}>
               <motion.div className="pointer-events-none absolute -bottom-10 -right-8" animate={reduce ? {} : { y: [0, -10, 0], opacity: [0.9, 1, 0.9] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}>
-                <BrandX className="h-48 w-48 sm:h-64 sm:w-64" />
+                <BrandX className="h-48 w-48 rounded-3xl opacity-40 sm:h-64 sm:w-64" />
               </motion.div>
               <div className="relative">
                 <QuoteMark color={CYAN} />

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "../OurVision";
 import ValuesSection from "../ValuesSection";
@@ -8,6 +9,28 @@ import {
   User,
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
+
+export const metadata: Metadata = {
+  title: "IoT & Edge Computing | Industrial IoT, Digital Twins & Edge | NineXDevOps",
+  description:
+    "Deploy industrial IoT platforms, edge computing, predictive maintenance, and digital twins that connect physical operations to real-time intelligence. Build Industry 4.0 infrastructure with NineXDevOps.",
+  keywords: [
+    "IoT",
+    "edge computing",
+    "Industrial IoT",
+    "predictive maintenance",
+    "digital twin",
+    "AWS IoT",
+    "smart manufacturing",
+    "Industry 4.0",
+    "NineXDevOps",
+  ],
+  openGraph: {
+    title: "IoT & Edge Computing | NineXDevOps",
+    description:
+      "Industrial IoT and edge infrastructure that connect, monitor, predict, and optimise physical operations.",
+  },
+};
 
 const metricGroups = [
   {

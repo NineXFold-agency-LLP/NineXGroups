@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SubPageHero from "@/components/sections/common/SubPageHero";
 import OurVision from "@/app/ninexFoldServices/OurVision";
 import ValuesSection from "@/app/ninexFoldServices/ValuesSection";
@@ -9,19 +10,43 @@ import {
 } from "lucide-react";
 import WhatWeDoSection from "../WhatWeDo";
 
+export const metadata: Metadata = {
+  title: "Digital Infrastructure System | CRM, MarTech & Marketing Ops | NineXFold",
+  description:
+    "Implement connected CRM, MarTech, and data infrastructure that cleans your stack, improves data quality, and raises marketing operations efficiency. Schedule a Digital Infrastructure Assessment.",
+  keywords: [
+    "digital infrastructure",
+    "CRM implementation",
+    "MarTech stack",
+    "marketing operations",
+    "data integration",
+    "marketing automation",
+    "revenue attribution",
+    "data governance",
+    "Salesforce",
+    "HubSpot",
+    "NineXFold",
+  ],
+  openGraph: {
+    title: "Digital Infrastructure System | NineXFold",
+    description:
+      "CRM, MarTech, and ops systems that connect every platform, clean every dataset, and power every growth initiative.",
+  },
+};
+
 const metricGroups = [
   {
     icon: <AlertTriangle size={22} strokeWidth={1.5} />,
     title: "Challenge",
     items: [
-      ["8", "different CRM systems and disconnected data"],
-      ["50%", "forecast accuracy missing quarterly targets"],
-      ["0", "unified customer view across products"],
-      ["180D", "sales cycles increasing and win rates declining"],
-      ["BLIND", "executive team lacking revenue visibility"],
+      ["8", "disconnected CRM and MarTech tools"],
+      ["35%", "duplicate or incomplete contact records"],
+      ["0", "reliable single customer view across systems"],
+      ["20H", "weekly ops time lost to manual exports"],
+      ["BROKEN", "attribution and reporting gaps across stack"],
     ],
     footerTitle: "BUSINESS PAIN",
-    footerText: "FRAGMENTED. DISCONNECTED.",
+    footerText: "FRAGMENTED. DIRTY. SLOW.",
     showArrow: true,
   },
 
@@ -29,14 +54,14 @@ const metricGroups = [
     icon: <Cpu size={22} strokeWidth={1.5} />,
     title: "Solution",
     items: [
-      ["CRM", "Unified Salesforce Revenue Cloud platform"],
-      ["AI", "Clari predictive forecasting and analytics"],
-      ["GONG", "Conversation intelligence and coaching"],
-      ["DATA", "Custom attribution and waterfall reporting"],
-      ["LIVE", "Executive dashboards with real-time visibility"],
+      ["CRM", "Unified Salesforce / HubSpot platform rollout"],
+      ["STACK", "MarTech audit, consolidation, and architecture"],
+      ["API", "Integration and data pipeline orchestration"],
+      ["GOV", "Data governance, UTM taxonomy, lifecycle rules"],
+      ["BI", "Analytics and multi-touch attribution layer"],
     ],
     footerTitle: "IMPLEMENTED SYSTEMS",
-    footerText: "CONNECTED. INTELLIGENT.",
+    footerText: "CONNECTED. CLEAN.",
     showArrow: false,
   },
 
@@ -44,18 +69,19 @@ const metricGroups = [
     icon: <TrendingUp size={22} strokeWidth={1.5} />,
     title: "Results",
     items: [
-      ["95%", "forecast accuracy improvement"],
-      ["$300M", "revenue impact in year one"],
-      ["60%", "faster sales cycles"],
-      ["40%", "larger average deal sizes"],
-      ["95%", "sales adoption within 30 days"],
-      ["3M", "ROI realization timeline"],
+      ["95%", "CRM and MarTech data match rate"],
+      ["70%", "reduction in manual marketing ops hours"],
+      ["1", "unified customer view across commercial stack"],
+      ["50%", "faster campaign reporting cycles"],
+      ["90%", "team adoption within 30 days of go-live"],
+      ["4M", "to stable, governed infrastructure"],
     ],
     footerTitle: "BUSINESS OUTCOMES",
     footerText: "MEASURABLE. SCALABLE.",
     showArrow: false,
   },
 ];
+
 const cards = [
   {
     title: "CRM Implementation & Configuration",
@@ -129,12 +155,13 @@ const cards = [
       "We deliver comprehensive team training programmes, operational playbooks, and system documentation for every platform we implement — ensuring your marketing and sales teams can execute independently, maintain systems correctly, and troubleshoot confidently without external dependency. Knowledge transfer is a deliverable of every infrastructure engagement we run.",
   },
 ];
+
 export default function Page() {
   return (
     <>
       <SubPageHero
         backgroundImage="/images/bg-image/Fold-bg.png"
-        headline="CONNECT. INTEGRATE. ACTIVATE. SCALE."
+        headline="Connect, integrate, and scale your commercial technology backbone"
         subheadline="Enterprise CRM implementation, MarTech architecture, data integration, and marketing operations infrastructure that connects every system, cleans every data set, and powers every growth initiative your business runs.
                     We implement, configure, migrate, and integrate the complete commercial technology backbone — from CRM setup and platform consolidation through analytics stack architecture and marketing operations infrastructure — ensuring your business runs on connected, clean, measurable systems that perform at enterprise scale."
       />
