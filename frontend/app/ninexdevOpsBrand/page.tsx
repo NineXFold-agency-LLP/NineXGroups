@@ -4,11 +4,8 @@ import ValuesSection from "./ValuesSection";
 import WhatWeDoSection from "./WhatWeDoSection";
 import ClientSuccessMetricsSection from "./ClientSuccessMetricsSection";
 import TechnologyPartnerships from "./TechnologyPartnerships";
-import Contact from "@/components/sections/common/Contact";
-
 import { Layers3, TrendingUp, Target, Users } from "lucide-react";
 import {
-  ArrowRight,
   BarChart3,
   SlidersHorizontal,
   User,
@@ -101,7 +98,7 @@ export default function Page() {
         ]}
         title="A world where every enterprise has the technology infrastructure to compete with the best-resourced players in their market."
         description="Technology is the great equaliser — but only for enterprises that build it with discipline, govern it with rigour, and operate it with excellence. We bring the full spectrum of technology capability — from cloud to AI to ERP to custom code — to every client we partner with, ensuring technology is always an asset that compounds in value, never a liability that constrains growth."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -115,7 +112,7 @@ export default function Page() {
           "Discipline",
           "Standards",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&q=80"
       />
       <WhatWeDoSection />
       <TechnologyPartnerships />

@@ -1,5 +1,4 @@
 import Hero from "@/components/sections/common/Hero";
-import OurApproachSection from "@/components/sections/common/OurApproachSection";
 import WhatWeDoSection from "./WhatWeDoSection";
 import TechnologyPartnerships from "./TechnologyPartnerships";
 import ClientSuccessMetricsSection from "./ClientSuccessMetricsSection";
@@ -97,7 +96,7 @@ export default function Page() {
         ]}
         title="A world where every business competes on strategy, not just spend."
         description="At NineXFold, we engineer the systems behind sustainable growth. Brand intelligence, demand generation, search visibility, content authority, and AI-powered automation architected together as one unified performance engine. We don't run campaigns. We build growth infrastructure. The kind that compounds, scales, and delivers measurable outcomes quarter after quarter, giving enterprise businesses a permanent structural advantage over their competition."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -111,7 +110,7 @@ export default function Page() {
           "Integration",
           "Scale",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=80"
       />
       <WhatWeDoSection />
       <TechnologyPartnerships />

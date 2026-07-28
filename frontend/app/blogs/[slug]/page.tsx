@@ -93,7 +93,7 @@ export default async function BlogDetailPage({ params }: Props) {
       name: "NineX Group",
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/images/logo.png`,
+        url: `${BASE_URL}/logo.png`,
       },
     },
     mainEntityOfPage: {

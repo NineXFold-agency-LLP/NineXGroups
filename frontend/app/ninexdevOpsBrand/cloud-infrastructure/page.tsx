@@ -106,7 +106,7 @@ export default function Page() {
           "Cloud security and compliance",
           "Managed cloud operations",
         ]}
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1600&auto=format&fit=crop"
       />
       <ClientSuccessMetricsSection
         metricGroups={metricGroups}

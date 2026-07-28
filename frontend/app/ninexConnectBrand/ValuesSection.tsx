@@ -49,7 +49,7 @@ export default function ValuesSection({
 
                             <div className="w-[6px] h-[6px] bg-[#22D3EE]" />
 
-                            <span className="uppercase tracking-[3px] sm:tracking-[4px] text-[9px] sm:text-[10px] font-semibold text-[#22D3EE]">
+                            <span className="uppercase tracking-[3px] sm:tracking-[4px] text-[9px] sm:text-[10px] font-semibold text-[#0891B2]">
                                 {eyebrow}
                             </span>
                         </div>
@@ -75,7 +75,7 @@ export default function ValuesSection({
                     {/* LEFT BOX */}
                     <div className="max-w-full sm:max-w-[320px] lg:pt-[90px]">
 
-                        <div className="text-[#22D3EE] text-[42px] sm:text-[52px] leading-none font-semibold mb-[14px] sm:mb-[18px]">
+                        <div className="text-[#0891B2] text-[42px] sm:text-[52px] leading-none font-semibold mb-[14px] sm:mb-[18px]">
                             &quot;
                         </div>
 

@@ -127,7 +127,7 @@ export default function Page() {
   return (
     <>
       <SubPageHero
-        backgroundImage="/images/bg-image/DevOps-bg.png"
+        backgroundImage="/images/bg-image/Devops-bg.png"
         headline="Customer experiences that build loyalty and drive growth"
         subheadline="Implement customer experience platforms that orchestrate journeys, personalize interactions, and turn service into competitive advantage."
       />
@@ -141,7 +141,7 @@ export default function Page() {
         ]}
         title="CX technology that makes every customer feel known."
         description="Exceptional customer experience needs unified data, intelligent automation, and seamless orchestration across every touchpoint. NineXDevOps implements CX platforms spanning CDP, journey orchestration, contact centers, service automation, and experience management."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -155,7 +155,7 @@ export default function Page() {
           "Orchestration",
           "Loyalty",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

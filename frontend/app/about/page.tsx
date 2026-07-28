@@ -32,7 +32,7 @@ export default function About() {
       />
 
       <EditorialInsightSection
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop"
         title="Most transformations fail between strategy, technology, and execution."
         description="We bring strategy, technology, and execution together under one roof, eliminating the gaps that slow growth, create complexity, and reduce accountability."
       />

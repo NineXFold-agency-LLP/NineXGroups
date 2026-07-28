@@ -142,7 +142,7 @@ export default function Page() {
         ]}
         title="Sales technology that turns productivity into a system."
         description="Modern B2B selling needs systems that automate manual work, surface insights, guide rep behavior, and give real-time pipeline visibility. NineXFold implements CRM, sales engagement, CPQ, CLM, enrichment, and conversation intelligence ecosystems that transform sales effectiveness."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1551434678-e076c223a692d?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -156,7 +156,7 @@ export default function Page() {
           "Velocity",
           "Visibility",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

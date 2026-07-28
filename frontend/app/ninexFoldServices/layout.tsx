@@ -1,5 +1,4 @@
 import NineXKiwiSection from "@/components/pages/Ninexkiwisection";
-import Contact from "@/components/sections/common/Contact";
 
 export default function Layout({
   children,
@@ -10,8 +9,6 @@ export default function Layout({
     <>
       {children}
 
-      {/* COMMON SECTIONS */}
-      {/* <Contact /> */}
       <NineXKiwiSection />
     </>
   );

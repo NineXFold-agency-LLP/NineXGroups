@@ -126,7 +126,7 @@ export default function Page() {
   return (
     <>
       <SubPageHero
-        backgroundImage="/images/bg-image/DevOps-bg.png"
+        backgroundImage="/images/bg-image/Devops-bg.png"
         headline="Networks and digital workspaces built for hybrid enterprise work"
         subheadline="Modernize connectivity with SD-WAN and SASE, secure remote access with Zero Trust, and equip teams with collaboration platforms that keep distributed workforces productive and protected."
       />
@@ -140,7 +140,7 @@ export default function Page() {
         ]}
         title="A workplace network that disappears into the background — because it just works."
         description="NineXDevOps delivers network and digital workspace modernization spanning SD-WAN, SASE, ZTNA, campus wireless, Microsoft 365 / collaboration platforms, and network operations — so every employee can access every application securely, from anywhere, with performance that supports the business."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -154,7 +154,7 @@ export default function Page() {
           "Performance",
           "Adoption",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

@@ -150,7 +150,7 @@ export default function Page() {
   return (
     <>
       <SubPageHero
-        backgroundImage="/images/bg-image/DevOps-bg.png"
+        backgroundImage="/images/bg-image/Devops-bg.png"
         headline="CONNECT. MONITOR. PREDICT. OPTIMISE."
         subheadline="Industrial IoT platforms and edge computing infrastructure that connect your physical operations to digital intelligence — enabling real-time monitoring, predictive maintenance, operational automation, and the data-driven decisions that Industry 4.0 demands.
                       We design, deploy, and operate IoT sensor networks, edge computing infrastructure, industrial automation systems, digital twin platforms, and the cloud connectivity that transforms physical assets from sources of operational cost into sources of operational intelligence. Manufacturing, logistics, energy, agriculture, and smart building clients globally run on the IoT and edge infrastructure we build.
@@ -167,7 +167,7 @@ export default function Page() {
         ]}
         title="A future where every physical asset in every enterprise is continuously monitored, continuously optimised, and continuously improving — without human intervention for anything the machines can manage themselves."
         description="The physical world is becoming digital. Every machine, every vehicle, every building, and every product is becoming a data source. The enterprises that build the infrastructure to capture, process, and act on that data will make better operational decisions, prevent more failures, waste fewer resources, and improve faster than those that are still managing physical operations without digital intelligence."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1551434678-e076c223a692d?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -181,7 +181,7 @@ export default function Page() {
           "Intelligence",
           "Outcome",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

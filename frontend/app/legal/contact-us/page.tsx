@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Loader2, CheckCircle, AlertCircle } from "lucide-react";
 import Image from "next/image";
 import Navigation from "@/components/layout/Navigation";
-import Footer from "@/components/layout/Footer";
 import { bobUp, staggerFadeUp, viewportOnce } from "@/animations";
 import Toast, { ToastType } from "@/components/ui/toast";
 import { CONTACT } from "@/lib/contact";

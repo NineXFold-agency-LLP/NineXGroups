@@ -6,11 +6,9 @@ import type { ComponentType, SVGProps } from "react";
 /* ------------------------------------------------------------------ */
 /*  Tokens                                                            */
 /* ------------------------------------------------------------------ */
-const INK = "#0E1B3D";
 const ICON = "#2D55D6";
 const LINE = "#D5DEF2";
 const RING = "#D9E1F1";
-const BODY = "#5C6B86";
 
 const STEP = 0.7;
 

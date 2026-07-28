@@ -140,7 +140,7 @@ export default function Page() {
         ]}
         title="Marketing technology that leadership can measure and trust."
         description="NineXConnect implements marketing platforms that turn campaigns into a repeatable growth system — with automation, scoring, CRM alignment, and attribution that connect every pound of spend to pipeline."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -154,7 +154,7 @@ export default function Page() {
           "Attribution",
           "Alignment",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

@@ -175,7 +175,7 @@ export default function Page() {
         ]}
         title="Infrastructure that makes every other system perform at its maximum potential."
         description="Great marketing strategies fail on broken infrastructure. Brilliant campaigns generate no pipeline when CRM integrations are broken. Perfect content goes untracked when analytics are misconfigured. Talented sales teams underperform when their tools fight them. We build the CRM, MarTech, and data infrastructure that makes every other investment your business makes in marketing and sales perform at its absolute maximum — because every system is connected, every data point is clean, and every team has the tools they need to execute without friction."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -189,7 +189,7 @@ export default function Page() {
           "Accuracy",
           "Trust",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

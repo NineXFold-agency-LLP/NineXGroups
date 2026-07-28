@@ -158,7 +158,7 @@ export default function Page() {
   return (
     <>
       <SubPageHero
-        backgroundImage="/images/bg-image/DevOps-bg.png"
+        backgroundImage="/images/bg-image/Devops-bg.png"
         headline="COLLECT. TRANSFORM. ANALYSE. DECIDE."
         subheadline="The data infrastructure that turns the raw data your enterprise generates into the commercial intelligence your leadership needs to make confident decisions at the speed your market demands.
                     We build enterprise data platforms — data warehouses, data lakes, lakehouse architectures, real-time streaming pipelines, and analytics infrastructure — using Snowflake, Databricks, dbt, Apache Kafka, and the full modern data stack. Every data platform we build is designed for scale, governed for accuracy, and connected to the BI and AI layers that transform it from stored data into operational competitive advantage.
@@ -174,7 +174,7 @@ export default function Page() {
         ]}
         title="An enterprise where every decision — from daily operations to board-level strategy — is made with complete, accurate, real-time data intelligence."
         description="Data infrastructure is the competitive leverage multiplier of the modern enterprise. Every investment in AI, personalisation, and operational intelligence is only as good as the data it runs on. We build the data foundations that make every downstream data initiative reliable, every analytical conclusion trustworthy, and every business decision better than the one it replaces."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -188,7 +188,7 @@ export default function Page() {
           "Quality",
           "Reliability",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

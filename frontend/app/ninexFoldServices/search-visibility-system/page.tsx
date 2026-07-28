@@ -182,7 +182,7 @@ export default function Page() {
         ]}
         title="Search visibility that compounds into a structural competitive moat."
         description="Paid media stops the moment you stop paying. Organic search visibility compounds every month. A brand that dominates traditional search, answer boxes, and AI-generated recommendations has built a traffic and trust asset that its competitors cannot simply outspend — it must be earned through content quality, technical excellence, and strategic patience. We engineer that compound advantage for every client we work with, and we build it to last."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -196,7 +196,7 @@ export default function Page() {
           "Authority",
           "Longevity",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

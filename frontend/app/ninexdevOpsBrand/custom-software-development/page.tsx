@@ -157,7 +157,7 @@ export default function Page() {
   return (
     <>
       <SubPageHero
-        backgroundImage="/images/bg-image/DevOps-bg.png"
+        backgroundImage="/images/bg-image/Devops-bg.png"
         headline="DESIGN. BUILD. DEPLOY. OWN IT."
         subheadline="Bespoke enterprise software built exactly to your requirements — when off-the-shelf products cannot solve your specific problem, your specific workflow, or your specific competitive advantage.
                       We design and build custom enterprise software covering complex internal workflow tools, industry-specific applications, proprietary platforms, legacy system replacements, and the unique technology that becomes your competitive differentiator. Every custom build uses modern engineering practices, cloud-native architecture, and the delivery discipline that complex enterprise software demands.
@@ -173,7 +173,7 @@ export default function Page() {
         ]}
         title="A world where every enterprise has the bespoke software that matches the uniqueness of its competitive strategy."
         description="The most competitive enterprises in every market are not running the same software as their competitors. They are running proprietary systems, custom workflows, and unique platforms that embed their competitive advantages in code rather than leaving them to depend on people, processes, or off-the-shelf tools that competitors can access equally. We build the software that makes your competitive advantages structural rather than operational."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -187,7 +187,7 @@ export default function Page() {
           "Design",
           "Clarity",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

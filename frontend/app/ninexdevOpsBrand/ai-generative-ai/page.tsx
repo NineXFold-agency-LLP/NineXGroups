@@ -106,7 +106,7 @@ export default function Page() {
           "AI/ML operations (MLOps)",
           "AI governance frameworks",
         ]}
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1600&auto=format&fit=crop"
       />
       <ClientSuccessMetricsSection
         metricGroups={metricGroups}

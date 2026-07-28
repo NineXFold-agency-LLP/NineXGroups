@@ -41,9 +41,9 @@ export default function ClientSuccessMetricsSection({
               <p>MEASURED OUTCOMES</p>
               <p>ACROSS INFRASTRUCTURE,</p>
               <p>
-                SECURITY, <span className="text-[#22D3EE]">AND</span>
+                SECURITY, <span className="text-[#0891B2]">AND</span>
               </p>
-              <p className="text-[#22D3EE]">DEVELOPMENT.</p>
+              <p className="text-[#0891B2]">DEVELOPMENT.</p>
             </div>
           </div>
 
@@ -144,7 +144,7 @@ export default function ClientSuccessMetricsSection({
               <div className="h-px w-full bg-[#22D3EE]/60" />
 
               <div className="px-[28px] py-[28px]">
-                <p className="mb-5 text-[11px] uppercase tracking-wide text-[#22D3EE]">
+                <p className="mb-5 text-[11px] uppercase tracking-wide text-[#0891B2]">
                   INSIGHT
                 </p>
 
@@ -163,7 +163,7 @@ export default function ClientSuccessMetricsSection({
                   READ OUR LATEST
                 </p>
 
-                <p className="text-[10px] uppercase tracking-wide text-[#22D3EE]">
+                <p className="text-[10px] uppercase tracking-wide text-[#0891B2]">
                   TECHNOLOGY INSIGHTS
                 </p>
               </div>
@@ -196,7 +196,7 @@ function MetricCard({
     <div className="flex min-h-[500px] min-w-0 flex-col overflow-hidden bg-white px-[22px] py-[22px]">
       {/* HEADER */}
       <div className="mb-[24px] flex items-center gap-3">
-        <div className="flex h-[46px] w-[46px] shrink-0 items-center justify-center rounded-full border border-[#22D3EE] text-[#22D3EE]">
+        <div className="flex h-[46px] w-[46px] shrink-0 items-center justify-center rounded-full border border-[#22D3EE] text-[#0891B2]">
           {icon}
         </div>
 
@@ -213,7 +213,7 @@ function MetricCard({
               key={item[0]}
               className="grid grid-cols-[68px_minmax(0,1fr)] gap-3 border-b border-[#ece9f1] py-[18px]"
             >
-              <div className="whitespace-nowrap text-[22px] font-light leading-none tracking-[0px] text-[#22D3EE]">
+              <div className="whitespace-nowrap text-[22px] font-light leading-none tracking-[0px] text-[#0891B2]">
                 {item[0]}
               </div>
 
@@ -234,14 +234,14 @@ function MetricCard({
               ) : null}
 
               {footerText ? (
-                <p className="text-[10px] uppercase tracking-wide text-[#22D3EE]">
+                <p className="text-[10px] uppercase tracking-wide text-[#0891B2]">
                   {footerText}
                 </p>
               ) : null}
             </div>
 
             {showArrow ? (
-              <button className="flex h-[36px] w-[36px] items-center justify-center rounded-full border border-[#22D3EE]/40 text-[#22D3EE] transition-all duration-300 hover:bg-[#22D3EE] hover:text-white">
+              <button className="flex h-[36px] w-[36px] items-center justify-center rounded-full border border-[#22D3EE]/40 text-[#0891B2] transition-all duration-300 hover:bg-[#22D3EE] hover:text-white">
                 <ArrowRight size={16} strokeWidth={1.5} />
               </button>
             ) : null}

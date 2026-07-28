@@ -127,7 +127,7 @@ export default function Page() {
   return (
     <>
       <SubPageHero
-        backgroundImage="/images/bg-image/DevOps-bg.png"
+        backgroundImage="/images/bg-image/Devops-bg.png"
         headline="DevOps automation that accelerates delivery without sacrificing reliability"
         subheadline="Build CI/CD, Infrastructure as Code, container platforms, and SRE practices that cut release cycles, raise deployment confidence, and keep critical systems resilient at scale."
       />
@@ -141,7 +141,7 @@ export default function Page() {
         ]}
         title="Software delivery as a competitive advantage."
         description="NineXDevOps implements enterprise DevOps and automation spanning CI/CD, IaC, Kubernetes platforms, release automation, observability, and DevSecOps — so engineering teams ship faster with higher quality and lower operational risk."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -155,7 +155,7 @@ export default function Page() {
           "Reliability",
           "Automation",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

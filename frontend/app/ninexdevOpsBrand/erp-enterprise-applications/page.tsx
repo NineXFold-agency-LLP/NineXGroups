@@ -127,7 +127,7 @@ export default function Page() {
   return (
     <>
       <SubPageHero
-        backgroundImage="/images/bg-image/DevOps-bg.png"
+        backgroundImage="/images/bg-image/Devops-bg.png"
         headline="Enterprise systems that optimize operations at scale"
         subheadline="Implement ERP, financial, supply chain, and HR systems that streamline operations, reduce costs, and enable global growth."
       />
@@ -141,7 +141,7 @@ export default function Page() {
         ]}
         title="ERP as the operational backbone of the modern enterprise."
         description="Enterprise resource planning integrates finance, supply chain, manufacturing, HR, and operations into unified platforms. NineXDevOps implements ERP solutions from leading vendors, customized to your industry and operational requirements — with measurable cost, speed, and visibility outcomes."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1563986768494-4dee2763ff36?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -155,7 +155,7 @@ export default function Page() {
           "Scale",
           "Visibility",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

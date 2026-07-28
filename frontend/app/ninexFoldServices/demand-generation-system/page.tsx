@@ -182,7 +182,7 @@ export default function Page() {
         ]}
         title="Demand generation so systematic it becomes a structural competitive advantage."
         description="Referrals run out. Seasons change. Single channels fail. Businesses that depend on any one source of pipeline are permanently fragile. We build demand generation infrastructure so diversified, so well-attributed, and so continuously optimised that your pipeline becomes a reliable, predictable, scalable asset — the kind that lets you plan 12 months ahead with confidence and invest in growth without fear."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -196,7 +196,7 @@ export default function Page() {
           "Qualification",
           "Precision",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

@@ -3,8 +3,6 @@ import Hero from "@/components/sections/common/Hero";
 import WhatWeDoSection from "./WhatWeDoSection";
 // import ClientSuccessMetricsSection from "./ClientSuccessMetricsSection";
 // import TechnologyPartnerships from "./TechnologyPartnerships";
-import Contact from "@/components/sections/common/Contact";
-
 import {
   Users,
   TrendingUp,

@@ -127,7 +127,7 @@ export default function Page() {
   return (
     <>
       <SubPageHero
-        backgroundImage="/images/bg-image/DevOps-bg.png"
+        backgroundImage="/images/bg-image/Devops-bg.png"
         headline="Digital products and platforms engineered for scale"
         subheadline="Design, build, and operate digital products, platforms, and experiences that engage customers, empower employees, and drive business growth."
       />
@@ -141,7 +141,7 @@ export default function Page() {
         ]}
         title="Digital engineering that combines product thinking with cloud-native delivery."
         description="Digital products need modern engineering practices — product strategy, UX design, cloud-native architecture, and agile delivery. NineXDevOps delivers digital engineering spanning customer products, internal platforms, mobile and web apps, APIs, microservices, and DevOps."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -155,7 +155,7 @@ export default function Page() {
           "Quality",
           "Platform",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

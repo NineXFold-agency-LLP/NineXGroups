@@ -136,7 +136,7 @@ export default function Page() {
         ]}
         title="Transform every customer conversation into a relationship-building moment."
         description="Contact centers are relationship centres and revenue drivers — not just cost centres. NineXConnect designs, deploys, and optimizes contact centers that deliver exceptional experiences while reducing costs and improving agent productivity."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -150,7 +150,7 @@ export default function Page() {
           "Efficiency",
           "Results",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

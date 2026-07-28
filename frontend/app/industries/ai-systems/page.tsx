@@ -158,7 +158,7 @@ We implement AI content engines, intelligent outreach systems, workflow automati
         ]}
         title="A business where your systems are smarter than your competitors' teams."
         description="The AI revolution is not coming. It is already separating the businesses that will define the next decade from those that will be disrupted by it. We cut through the hype and implement the AI and automation infrastructure that delivers real, measurable business outcomes — more pipeline, more content, more efficiency, and more revenue — with less manual effort than you have ever needed before."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -172,7 +172,7 @@ We implement AI content engines, intelligent outreach systems, workflow automati
           "Accountability",
           "Commercial Thinking",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

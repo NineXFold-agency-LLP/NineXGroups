@@ -128,7 +128,7 @@ export default function Page() {
   return (
     <>
       <SubPageHero
-        backgroundImage="/images/bg-image/DevOps-bg.png"
+        backgroundImage="/images/bg-image/Devops-bg.png"
         headline="Enterprise cybersecurity that protects what matters most"
         subheadline="Build Zero Trust architectures, operate 24/7 security operations centers, and maintain comprehensive security posture with zero breaches for 5+ years."
       />
@@ -142,7 +142,7 @@ export default function Page() {
         ]}
         title="Defense-in-depth security for the modern enterprise."
         description="Modern cyber threats require technology, process, and people working together. NineXDevOps implements cybersecurity programs spanning 24/7 SOC, Zero Trust, IAM, cloud security, AppSec, and compliance — with a track record of zero breaches for managed clients over 5+ years."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -156,7 +156,7 @@ export default function Page() {
           "Resilience",
           "Compliance",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

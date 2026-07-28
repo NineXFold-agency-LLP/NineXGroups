@@ -143,7 +143,7 @@ export default function Page() {
         ]}
         title="RevOps that turns revenue into a managed system."
         description="Revenue operations (RevOps) is the convergence of people, process, technology, and data across marketing, sales, and customer success. NineXFold's Revenue Systems practice implements the platforms, processes, and analytics that unify your revenue organization — from intelligence and forecasting to pricing, territory planning, and attribution."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1563986768494-4dee2763ff36?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -157,7 +157,7 @@ export default function Page() {
           "Alignment",
           "Predictability",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

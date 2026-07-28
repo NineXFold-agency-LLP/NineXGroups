@@ -140,7 +140,7 @@ export default function Page() {
         ]}
         title="A CRM that becomes the operating system for customer relationships."
         description="NineXConnect designs and implements CRM solutions that sales, service, and marketing teams actually use — integrating CRM with ERP, marketing automation, e-commerce, and operational systems to deliver seamless customer experiences and data-driven outcomes."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -154,7 +154,7 @@ export default function Page() {
           "Integration",
           "Clarity",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

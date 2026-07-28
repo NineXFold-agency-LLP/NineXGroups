@@ -1,8 +1,5 @@
 import Hero from "@/components/sections/common/Hero";
-import OurApproachSection from "@/components/sections/common/OurApproachSection";
 import WhatWeDoSection from "./WhatWeDoSection";
-
-import Contact from "@/components/sections/common/Contact";
 
 import {
   DollarSign,
@@ -16,7 +13,7 @@ export default function Page() {
     <>
       {/* HERO SECTION */}
       <Hero
-        backgroundImage="/images/bg-image/Devops-bg.png"
+        backgroundImage="/images/bgNinexscale.png"
         subheadline="GROWTH STRATEGY & CONSULTING"
         headline="Strategic growth. Accelerated execution. Measurable results."
         body="NineXScale provides growth strategy and execution services for enterprises entering new

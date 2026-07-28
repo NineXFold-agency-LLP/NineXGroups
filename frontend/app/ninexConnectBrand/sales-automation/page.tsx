@@ -140,7 +140,7 @@ export default function Page() {
         ]}
         title="A sales motion that runs as a system, not a collection of personal habits."
         description="NineXConnect builds sales automation ecosystems — engagement platforms, cadences, routing, activity capture, and enablement — that transform inconsistent outreach into predictable pipeline creation and faster conversion."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -154,7 +154,7 @@ export default function Page() {
           "Consistency",
           "Pipeline",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

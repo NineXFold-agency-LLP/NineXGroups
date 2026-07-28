@@ -174,7 +174,7 @@ export default function Page() {
         ]}
         title="A brand so clear, so differentiated, and so consistently expressed that your competitors feel it."
         description="Most enterprise brands underperform commercially because they were built tactically, not strategically. A logo is not a brand. A colour palette is not a brand. A brand is the specific, distinctive set of associations in a buyer's mind that makes them choose you over every alternative — including doing nothing. We architect that distinctiveness from the strategic foundation up, and then we build the systems that express it consistently everywhere your buyers encounter you."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -188,7 +188,7 @@ export default function Page() {
           "Strategy",
           "Intelligence",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

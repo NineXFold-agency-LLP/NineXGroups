@@ -182,7 +182,7 @@ export default function Page() {
         ]}
         title="A brand so well-known, so well-cited, and so well-regarded that entering your market becomes intimidating."
         description="Content authority is the most defensible competitive advantage in modern marketing. Unlike paid media, it cannot be instantly replicated. Unlike technology, it cannot be licensed. It is earned through years of consistent, high-quality publishing, intelligent distribution, and strategic thought leadership — and the brands that build it early create a compounding advantage that becomes a genuine barrier to competition. We build that advantage, systematically, for every client we partner with."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -196,7 +196,7 @@ export default function Page() {
           "Longevity",
           "Relevance",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

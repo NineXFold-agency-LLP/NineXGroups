@@ -74,7 +74,7 @@ export default function CareerSection() {
             className="inline-flex shrink-0 items-center justify-center gap-2 self-center md:self-auto bg-[#0B1A3A] text-[13px] sm:text-[14px] font-medium tracking-[-0.01em] text-white px-5 py-2.5 min-h-[44px] w-full sm:w-auto hover:opacity-90 transition"
             onClick={(e) => {
               e.preventDefault();
-              router.push("/ninexFold/careers/find-a-job");
+              router.push("/careers/culture");
             }}
           >
             Explore Careers

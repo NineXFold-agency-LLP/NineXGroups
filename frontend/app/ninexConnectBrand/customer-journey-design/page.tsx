@@ -139,7 +139,7 @@ export default function Page() {
         ]}
         title="Every customer interaction should feel intentional — never accidental."
         description="NineXConnect designs and implements customer journey systems that connect brand, demand, sales, onboarding, and service into one coherent experience — measured by engagement, conversion, retention, and lifetime value."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -153,7 +153,7 @@ export default function Page() {
           "Orchestration",
           "Outcomes",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

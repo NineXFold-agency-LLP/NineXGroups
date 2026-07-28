@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Mail, Zap, BookOpen } from "lucide-react";
 
@@ -66,7 +67,7 @@ export default function Page() {
             </button>
           </motion.div>
 
-          <motion.p {...rise(3)} className="mt-4 text-[12px] text-[#0A1633]/45">
+          <motion.p {...rise(3)} className="mt-4 text-[12px] text-[#0A1633]/60">
             Join 12,000+ operators and founders. Unsubscribe anytime.
           </motion.p>
         </div>
@@ -91,27 +92,27 @@ export default function Page() {
       <section className="mx-auto w-full max-w-[1220px] px-5 sm:px-6 lg:px-8 pb-[100px]">
         <div className="mb-7 flex items-end justify-between border-t border-[#0A1633]/15 pt-7">
           <h2 className="text-[13px] font-semibold uppercase tracking-[2px] text-[#0A1633]/60">Recent Editions</h2>
-          <a href="/blogs" className="text-[12px] font-medium uppercase tracking-[1px] text-[#2563EB] hover:underline">View archive</a>
+          <Link href="/blogs" className="text-[12px] font-medium uppercase tracking-[1px] text-[#2563EB] hover:underline">View archive</Link>
         </div>
 
         {issues.map((it, i) => (
-          <motion.a
-            href="/blogs"
-            key={it.n}
-            {...rise(i)}
-            className="group flex items-center justify-between border-b border-[#0A1633]/15 py-6 transition-colors duration-300 hover:bg-white"
-          >
-            <div className="flex items-baseline gap-5">
-              <span className="text-[13px] tabular-nums text-[#0A1633]/35">{it.n}</span>
-              <h3 className="text-[20px] sm:text-[26px] font-medium leading-[1.1] tracking-[-0.025em] transition-colors duration-300 group-hover:text-[#2563EB]">
-                {it.title}
-              </h3>
-            </div>
-            <div className="flex items-center gap-5">
-              <span className="hidden sm:inline text-[12px] uppercase tracking-[1px] text-[#0A1633]/45">{it.meta}</span>
-              <ArrowRight size={17} className="text-[#0A1633]/40 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#2563EB]" />
-            </div>
-          </motion.a>
+          <motion.div key={it.n} {...rise(i)}>
+            <Link
+              href="/blogs"
+              className="group flex items-center justify-between border-b border-[#0A1633]/15 py-6 transition-colors duration-300 hover:bg-white"
+            >
+              <div className="flex items-baseline gap-5">
+                <span className="text-[13px] tabular-nums text-[#0A1633]/35">{it.n}</span>
+                <h3 className="text-[20px] sm:text-[26px] font-medium leading-[1.1] tracking-[-0.025em] transition-colors duration-300 group-hover:text-[#2563EB]">
+                  {it.title}
+                </h3>
+              </div>
+              <div className="flex items-center gap-5">
+                <span className="hidden sm:inline text-[12px] uppercase tracking-[1px] text-[#0A1633]/60">{it.meta}</span>
+                <ArrowRight size={17} className="text-[#0A1633]/40 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#2563EB]" />
+              </div>
+            </Link>
+          </motion.div>
         ))}
       </section>
     </main>

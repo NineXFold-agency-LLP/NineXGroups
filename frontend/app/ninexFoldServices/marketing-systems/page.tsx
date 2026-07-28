@@ -143,7 +143,7 @@ export default function Page() {
         ]}
         title="Marketing that leadership can measure and trust."
         description="Modern marketing needs technology spanning automation, advertising, content, analytics, and ABM. NineXFold implements marketing stacks that generate measurable pipeline contribution and prove marketing ROI — from Marketo and HubSpot to 6sense, attribution platforms, and executive dashboards."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -157,7 +157,7 @@ export default function Page() {
           "Accountability",
           "Alignment",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection

@@ -24,8 +24,6 @@ interface OurApproachSectionProps {
 export default function OurApproachSection({
   eyebrow,
   title,
-  quote,
-  bottomText,
   phases,
 }: OurApproachSectionProps) {
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 import type { ReactNode, SVGProps } from "react";
 
 /* ------------------------------------------------------------------ */
@@ -365,7 +365,6 @@ function Detail({
 /*  Page                                                              */
 /* ------------------------------------------------------------------ */
 export default function CsrSection() {
-  const reduce = useReducedMotion();
   const im = IMG;
 
   return (

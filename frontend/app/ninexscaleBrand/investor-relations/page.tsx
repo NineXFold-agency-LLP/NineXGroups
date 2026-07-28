@@ -151,7 +151,7 @@ export default function Page() {
   return (
     <>
       <SubPageHero
-        backgroundImage="/images/bg-image/DevOps-bg.png"
+        backgroundImage="/images/bgNinexscale.png"
         headline="DEPLOY. AGENTS. THAT WORK. 24/7."
         subheadline="Purpose-built AI agents that operate autonomously inside your enterprise — completing research, processing data, managing workflows, engaging customers, and executing complex multi-step tasks continuously, at scale, without human initiation.
                       We design, architect, and deploy custom AI agents using the most advanced agentic frameworks available — LangChain, LangGraph, AutoGen, CrewAI, and custom proprietary architectures — connected to your enterprise systems, data sources, and communication channels. Every agent we build is production-grade, commercially justified, and governed by the guardrails your enterprise requires.
@@ -167,7 +167,7 @@ export default function Page() {
         ]}
         title="A future where the most productive enterprises are not those with the most employees but those with the most capable AI agents."
         description="The AI agent revolution is not about replacing humans. It is about deploying autonomous intelligence to handle the high-volume, repetitive, research-intensive work that currently consumes your team's most valuable hours — freeing every human in your organisation to focus on the work that genuinely requires human judgment, creativity, and relationship. We build the agents that make that future a present reality."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1563986768494-4dee2763ff36?q=80&w=1600&auto=format&fit=crop"
       />
 
       <ValuesSection
@@ -181,7 +181,7 @@ export default function Page() {
           "Justification",
           "Outcomes",
         ]}
-        image="https://images.unsplash.com/photo-1545987796-200677ee1011?w=600&q=80"
+        image="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&q=80"
       />
       <WhatWeDoSection cards={cards} />
       <ClientSuccessMetricsSection
