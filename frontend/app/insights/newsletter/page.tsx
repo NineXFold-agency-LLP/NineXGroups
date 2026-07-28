@@ -91,12 +91,12 @@ export default function Page() {
       <section className="mx-auto w-full max-w-[1220px] px-5 sm:px-6 lg:px-8 pb-[100px]">
         <div className="mb-7 flex items-end justify-between border-t border-[#0A1633]/15 pt-7">
           <h2 className="text-[13px] font-semibold uppercase tracking-[2px] text-[#0A1633]/60">Recent Editions</h2>
-          <a href="#" className="text-[12px] font-medium uppercase tracking-[1px] text-[#2563EB] hover:underline">View archive</a>
+          <a href="/blogs" className="text-[12px] font-medium uppercase tracking-[1px] text-[#2563EB] hover:underline">View archive</a>
         </div>
 
         {issues.map((it, i) => (
           <motion.a
-            href="#"
+            href="/blogs"
             key={it.n}
             {...rise(i)}
             className="group flex items-center justify-between border-b border-[#0A1633]/15 py-6 transition-colors duration-300 hover:bg-white"

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { Download, ArrowRight } from "lucide-react";
+import { Download } from "lucide-react";
 
 const FONT = { fontFamily: "'Inter', sans-serif" } as const;
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -58,8 +58,8 @@ export default function Page() {
             </motion.p>
 
             <motion.div {...rise(2)} className="mt-9 flex flex-wrap items-center gap-4">
-              <a href="#" className="group inline-flex items-center gap-2 bg-white px-7 py-[15px] text-[13px] font-semibold uppercase tracking-[1px] text-[#0A1633] transition-colors duration-300 hover:bg-[#2563EB] hover:text-white">
-                <Download size={16} strokeWidth={1.8} /> Download the report
+              <a href="/legal/contact-us" className="group inline-flex items-center gap-2 bg-white px-7 py-[15px] text-[13px] font-semibold uppercase tracking-[1px] text-[#0A1633] transition-colors duration-300 hover:bg-[#2563EB] hover:text-white">
+                <Download size={16} strokeWidth={1.8} /> Request the report
               </a>
               <span className="text-[12px] uppercase tracking-[1.5px] text-white/55">Feb 2026 · PDF · 64 pages</span>
             </motion.div>
@@ -104,17 +104,6 @@ export default function Page() {
             </motion.div>
           ))}
         </div>
-
-        <motion.div {...rise()} className="mt-14 flex flex-col items-start justify-between gap-6 border border-[#0A1633]/10 bg-white p-8 sm:flex-row sm:items-center sm:p-10">
-          <div>
-            <h3 className="text-[24px] sm:text-[30px] font-medium tracking-[-0.03em]">Plan your year on real data.</h3>
-            <p className="mt-2 text-[14px] text-[#0A1633]/65">Download instantly — free, no paywall.</p>
-          </div>
-          <a href="#" className="group inline-flex shrink-0 items-center gap-2 bg-[#0A1633] px-7 py-[15px] text-[13px] font-semibold uppercase tracking-[1px] text-white transition-colors duration-300 hover:bg-[#2563EB]">
-            <Download size={16} strokeWidth={1.8} /> Download now
-            <ArrowRight size={15} className="transition-transform duration-300 group-hover:translate-x-1" />
-          </a>
-        </motion.div>
       </section>
     </main>
   );

@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 
 const FONT = { fontFamily: "'Inter', sans-serif" } as const;
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -78,7 +77,7 @@ export default function Page() {
       </section>
 
       {/* PILLARS */}
-      <section className="mx-auto w-full max-w-[1220px] px-5 sm:px-6 lg:px-8 pb-[64px]">
+      <section className="mx-auto w-full max-w-[1220px] px-5 sm:px-6 lg:px-8 pb-[100px]">
         <motion.h2 {...rise()} className="max-w-[18ch] text-[30px] sm:text-[42px] font-medium leading-[1.04] tracking-[-0.035em] mb-12">
           What life here actually looks like
         </motion.h2>
@@ -91,21 +90,6 @@ export default function Page() {
             </motion.div>
           ))}
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="mx-auto w-full max-w-[1220px] px-5 sm:px-6 lg:px-8 pb-[100px]">
-        <motion.div {...rise()} className="relative overflow-hidden bg-[#0A1633] p-10 sm:p-14 text-white">
-          <div className="absolute -right-32 -top-32 h-[360px] w-[360px] bg-[#2563EB]/30 blur-[140px]" />
-          <div className="relative flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
-            <h3 className="max-w-[20ch] text-[28px] sm:text-[40px] font-medium leading-[1.05] tracking-[-0.035em]">
-              Like the sound of it? Come build with us.
-            </h3>
-            <a href="#" className="group inline-flex shrink-0 items-center gap-2 bg-white px-7 py-[15px] text-[13px] font-semibold uppercase tracking-[1px] text-[#0A1633] transition-colors duration-300 hover:bg-[#2563EB] hover:text-white">
-              See open roles <ArrowRight size={15} className="transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
-          </div>
-        </motion.div>
       </section>
     </main>
   );

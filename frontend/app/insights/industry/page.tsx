@@ -7,12 +7,12 @@ const FONT = { fontFamily: "'Inter', sans-serif" } as const;
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 const sectors = [
-  { n: "01", sector: "Fintech & Banking", title: "The Digital Banking Inflection", meta: "2026 Outlook · 16 pages" },
-  { n: "02", sector: "Healthcare", title: "Connected Care & the EHR Shift", meta: "2026 Outlook · 14 pages" },
-  { n: "03", sector: "Retail & Commerce", title: "Omnichannel Economics", meta: "2026 Outlook · 18 pages" },
-  { n: "04", sector: "Manufacturing", title: "Industry 4.0 Adoption Index", meta: "2026 Outlook · 20 pages" },
-  { n: "05", sector: "Energy & Utilities", title: "Grid, Storage & the Transition", meta: "2026 Outlook · 15 pages" },
-  { n: "06", sector: "Logistics", title: "Supply-Chain Visibility Report", meta: "2026 Outlook · 13 pages" },
+  { n: "01", sector: "Fintech & Banking", title: "The Digital Banking Inflection", meta: "2026 Outlook · 16 pages", href: "/industries/fintech" },
+  { n: "02", sector: "Healthcare", title: "Connected Care & the EHR Shift", meta: "2026 Outlook · 14 pages", href: "/industries/healthcare" },
+  { n: "03", sector: "Retail & Commerce", title: "Omnichannel Economics", meta: "2026 Outlook · 18 pages", href: "/industries/retail-ecommerce" },
+  { n: "04", sector: "Manufacturing", title: "Industry 4.0 Adoption Index", meta: "2026 Outlook · 20 pages", href: "/industries/manufacturing-industry-4" },
+  { n: "05", sector: "Energy & Utilities", title: "Grid, Storage & the Transition", meta: "2026 Outlook · 15 pages", href: "/industries/energy" },
+  { n: "06", sector: "Logistics", title: "Supply-Chain Visibility Report", meta: "2026 Outlook · 13 pages", href: "/legal/contact-us" },
 ];
 
 export default function Page() {
@@ -53,7 +53,7 @@ export default function Page() {
         <div className="border-t border-[#0A1633]/15">
           {sectors.map((s, i) => (
             <motion.a
-              href="#"
+              href={s.href}
               key={s.n}
               {...rise(i)}
               className="group grid grid-cols-[44px_1fr_auto] sm:grid-cols-[64px_220px_1fr_auto] items-center gap-4 border-b border-[#0A1633]/15 py-7 sm:py-9 transition-colors duration-300 hover:bg-white"

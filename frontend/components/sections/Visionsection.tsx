@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import type { ComponentType, SVGProps } from "react";
 
@@ -56,113 +57,112 @@ function VisionHero() {
   const reduce = useReducedMotion();
 
   return (
-    <svg viewBox="0 0 720 660" className="h-auto w-full max-w-[660px]" role="img" aria-label="NineXGroup vision">
-      <defs>
-        <radialGradient id="vh-glow" cx="50%" cy="45%" r="55%">
-          <stop offset="0%" stopColor="#C9D4FA" stopOpacity="0.55" />
-          <stop offset="100%" stopColor="#C9D4FA" stopOpacity="0" />
-        </radialGradient>
-        <linearGradient id="vh-xa" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#6E8CFF" />
-          <stop offset="1" stopColor="#2C49E6" />
-        </linearGradient>
-        <linearGradient id="vh-xb" x1="1" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#3E59F2" />
-          <stop offset="1" stopColor="#241BB6" />
-        </linearGradient>
-        <linearGradient id="vh-podtop" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#FFFFFF" />
-          <stop offset="1" stopColor="#EEF2FB" />
-        </linearGradient>
-        <linearGradient id="vh-podside" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#E7ECF8" />
-          <stop offset="1" stopColor="#D7DEEF" />
-        </linearGradient>
-      </defs>
+    <div className="relative h-auto w-full max-w-[660px]">
+      <svg viewBox="0 0 720 660" className="h-auto w-full" role="img" aria-label="NineXGroup vision">
+        <defs>
+          <radialGradient id="vh-glow" cx="50%" cy="45%" r="55%">
+            <stop offset="0%" stopColor="#C9D4FA" stopOpacity="0.55" />
+            <stop offset="100%" stopColor="#C9D4FA" stopOpacity="0" />
+          </radialGradient>
+          <linearGradient id="vh-podtop" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#FFFFFF" />
+            <stop offset="1" stopColor="#EEF2FB" />
+          </linearGradient>
+          <linearGradient id="vh-podside" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#E7ECF8" />
+            <stop offset="1" stopColor="#D7DEEF" />
+          </linearGradient>
+        </defs>
 
-      {/* radar glow + static rings */}
-      <circle cx="400" cy="330" r="300" fill="url(#vh-glow)" />
-      {[160, 245, 330, 415].map((r, i) => (
-        <circle
-          key={r}
-          cx="400"
-          cy="330"
-          r={r}
-          fill="none"
-          stroke="#D7DEF1"
-          strokeOpacity={0.85 - i * 0.16}
-        />
-      ))}
-
-      {/* pulsing sonar rings */}
-      {!reduce &&
-        [0, 1].map((i) => (
-          <motion.circle
-            key={i}
+        {/* radar glow + static rings — center at (400, 330) */}
+        <circle cx="400" cy="330" r="300" fill="url(#vh-glow)" />
+        {[160, 245, 330, 415].map((r, i) => (
+          <circle
+            key={r}
             cx="400"
             cy="330"
+            r={r}
             fill="none"
-            stroke={ACCENT}
-            strokeWidth={1.2}
-            initial={{ r: 160, opacity: 0 }}
-            animate={{ r: [160, 415], opacity: [0.3, 0] }}
-            transition={{ duration: 4.2, repeat: Infinity, ease: "easeOut", delay: i * 2.1 }}
+            stroke="#D7DEF1"
+            strokeOpacity={0.85 - i * 0.16}
           />
         ))}
 
-      {/* mountains */}
-      <path
-        d="M150 470 L250 360 L320 430 L400 330 L470 430 L560 380 L660 470 Z"
-        fill="#E6EBF5"
-      />
-      <path
-        d="M210 478 L300 400 L370 460 L455 392 L540 470 Z"
-        fill="#DCE3F1"
-        opacity="0.8"
-      />
+        {/* pulsing sonar rings */}
+        {!reduce &&
+          [0, 1].map((i) => (
+            <motion.circle
+              key={i}
+              cx="400"
+              cy="330"
+              fill="none"
+              stroke={ACCENT}
+              strokeWidth={1.2}
+              initial={{ r: 160, opacity: 0 }}
+              animate={{ r: [160, 415], opacity: [0.3, 0] }}
+              transition={{ duration: 4.2, repeat: Infinity, ease: "easeOut", delay: i * 2.1 }}
+            />
+          ))}
 
-      {/* podium */}
-      <ellipse cx="400" cy="540" rx="186" ry="26" fill="#000" opacity="0.05" />
-      <path d="M236 500 a164 36 0 0 0 328 0 v22 a164 36 0 0 1 -328 0 z" fill="url(#vh-podside)" />
-      <ellipse cx="400" cy="500" rx="164" ry="36" fill="url(#vh-podtop)" />
-      <ellipse cx="400" cy="500" rx="164" ry="36" fill="none" stroke="#E2E8F5" />
+        {/* mountains */}
+        <path
+          d="M150 470 L250 360 L320 430 L400 330 L470 430 L560 380 L660 470 Z"
+          fill="#E6EBF5"
+        />
+        <path
+          d="M210 478 L300 400 L370 460 L455 392 L540 470 Z"
+          fill="#DCE3F1"
+          opacity="0.8"
+        />
 
-      {/* floating X */}
-      <motion.g
-        animate={reduce ? {} : { y: [0, -9, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-      >
-        <path d="M318 262 l92 132 -34 24 -92 -132 z" fill="url(#vh-xa)" />
-        <path d="M482 262 l-176 252 34 24 176 -252 z" fill="url(#vh-xb)" />
-        <path d="M318 262 l92 132 -16 11 -76 -109 z" fill="#fff" opacity="0.12" />
-      </motion.g>
+        {/* podium */}
+        <ellipse cx="400" cy="540" rx="186" ry="26" fill="#000" opacity="0.05" />
+        <path d="M236 500 a164 36 0 0 0 328 0 v22 a164 36 0 0 1 -328 0 z" fill="url(#vh-podside)" />
+        <ellipse cx="400" cy="500" rx="164" ry="36" fill="url(#vh-podtop)" />
+        <ellipse cx="400" cy="500" rx="164" ry="36" fill="none" stroke="#E2E8F5" />
 
-      {/* trajectory */}
-      <path
-        d="M250 410 Q 392 296 556 286"
-        fill="none"
-        stroke="#9FB3EE"
-        strokeWidth="2"
-        strokeDasharray="1 8"
-        strokeLinecap="round"
-      />
-      <path d="M548 278 l12 8 -9 11" fill="none" stroke="#8AA0E6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-      {/* start dot */}
-      <circle cx="250" cy="410" r="5.5" fill={ACCENT} stroke="#fff" strokeWidth="2.5" />
-      {/* travelling dot */}
-      {!reduce && (
-        <circle r="5" fill={ACCENT} opacity="0">
-          <animateMotion dur="4.6s" repeatCount="indefinite" path="M250 410 Q 392 296 556 286" />
-          <animate
-            attributeName="opacity"
-            dur="4.6s"
-            repeatCount="indefinite"
-            values="0;1;1;0"
-            keyTimes="0;0.12;0.85;1"
+        {/* trajectory */}
+        <path
+          d="M250 410 Q 392 296 556 286"
+          fill="none"
+          stroke="#9FB3EE"
+          strokeWidth="2"
+          strokeDasharray="1 8"
+          strokeLinecap="round"
+        />
+        <path d="M548 278 l12 8 -9 11" fill="none" stroke="#8AA0E6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="250" cy="410" r="5.5" fill={ACCENT} stroke="#fff" strokeWidth="2.5" />
+        {!reduce && (
+          <circle r="5" fill={ACCENT} opacity="0">
+            <animateMotion dur="4.6s" repeatCount="indefinite" path="M250 410 Q 392 296 556 286" />
+            <animate
+              attributeName="opacity"
+              dur="4.6s"
+              repeatCount="indefinite"
+              values="0;1;1;0"
+              keyTimes="0;0.12;0.85;1"
+            />
+          </circle>
+        )}
+      </svg>
+
+      {/* NineX mark — centered on concentric circles (400/720, 330/660) */}
+      <div className="pointer-events-none absolute left-[55.56%] top-[50%] z-10 -translate-x-1/2 -translate-y-1/2">
+        <motion.div
+          animate={reduce ? {} : { y: [0, -9, 0] }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <Image
+            src="/ninex.png"
+            alt="NineXGroup"
+            width={220}
+            height={220}
+            className="h-[140px] w-[140px] rounded-2xl object-contain shadow-[0_18px_40px_-18px_rgba(35,72,242,0.45)] sm:h-[180px] sm:w-[180px] lg:h-[200px] lg:w-[200px]"
+            priority
           />
-        </circle>
-      )}
-    </svg>
+        </motion.div>
+      </div>
+    </div>
   );
 }
 

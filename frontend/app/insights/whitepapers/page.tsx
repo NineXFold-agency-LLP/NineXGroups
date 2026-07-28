@@ -69,10 +69,10 @@ export default function Page() {
               </div>
 
               <a
-                href="#"
+                href="/legal/contact-us"
                 className="inline-flex w-fit items-center gap-2 border border-[#0A1633] px-5 py-[11px] text-[12px] font-semibold uppercase tracking-[1px] transition-colors duration-300 group-hover:bg-[#0A1633] group-hover:text-white"
               >
-                <Download size={15} strokeWidth={1.8} /> Download
+                <Download size={15} strokeWidth={1.8} /> Request PDF
               </a>
             </motion.div>
           ))}

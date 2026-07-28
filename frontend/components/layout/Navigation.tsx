@@ -370,11 +370,11 @@ const navigationItems: NavigationItem[] = [
         "Join us to build impactful careers and shape the future with innovation and purpose.",
     },
     children: [
-      {
-        label: "Opportunities",
-        href: "#",
-        children: [{ label: "Open Positions", href: "/careers/jobs" }],
-      },
+      // {
+      //   label: "Opportunities",
+      //   href: "#",
+      //   children: [{ label: "Open Positions", href: "/careers/jobs" }],
+      // },
       {
         label: "Life at NineX",
         href: "#",

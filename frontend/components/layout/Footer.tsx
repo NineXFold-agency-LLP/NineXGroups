@@ -274,9 +274,9 @@ export default function Footer() {
           <div className="flex flex-col space-y-8 lg:border-l lg:border-white/10 lg:pl-8">
             <AccordionSection title="Careers">
               <ul className="space-y-3">
-                <li>
+                {/* <li>
                   <NavLink href="/careers/jobs">Open Positions</NavLink>
-                </li>
+                </li> */}
                 <li>
                   <NavLink href="/careers/life">Life at NineX</NavLink>
                 </li>

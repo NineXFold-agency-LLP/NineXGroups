@@ -15,12 +15,12 @@ const featured = {
 };
 
 const items = [
-  { type: "Video", title: "Building a software-defined vehicle", meta: "12 min", img: "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1000&auto=format&fit=crop", live: false },
-  { type: "Webinar", title: "GEO & the future of search", meta: "Apr 18 · Live", img: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1000&auto=format&fit=crop", live: true },
-  { type: "Video", title: "Designing funnels that convert", meta: "9 min", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop", live: false },
-  { type: "Webinar", title: "Modern data architecture, explained", meta: "May 02 · Live", img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop", live: true },
-  { type: "Video", title: "Inside a digital banking rebuild", meta: "15 min", img: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1000&auto=format&fit=crop", live: false },
-  { type: "Video", title: "Smart factory in 8 minutes", meta: "8 min", img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1000&auto=format&fit=crop", live: false },
+  { type: "Video", title: "Building a software-defined vehicle", meta: "12 min", img: "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1000&auto=format&fit=crop", live: false, href: "/industries/automotive-mobility" },
+  { type: "Webinar", title: "GEO & the future of search", meta: "Apr 18 · Live", img: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1000&auto=format&fit=crop", live: true, href: "/insights/newsletter" },
+  { type: "Video", title: "Designing funnels that convert", meta: "9 min", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop", live: false, href: "/insights/marketing-trends" },
+  { type: "Webinar", title: "Modern data architecture, explained", meta: "May 02 · Live", img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop", live: true, href: "/insights/newsletter" },
+  { type: "Video", title: "Inside a digital banking rebuild", meta: "15 min", img: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1000&auto=format&fit=crop", live: false, href: "/industries/fintech" },
+  { type: "Video", title: "Smart factory in 8 minutes", meta: "8 min", img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1000&auto=format&fit=crop", live: false, href: "/industries/manufacturing-industry-4" },
 ];
 
 export default function Page() {
@@ -53,7 +53,7 @@ export default function Page() {
 
       {/* FEATURED PLAYER */}
       <section className="mx-auto w-full max-w-[1220px] px-5 sm:px-6 lg:px-8 pb-[56px]">
-        <motion.a href="#" {...rise()} className="group relative block min-h-[320px] sm:min-h-[460px] overflow-hidden bg-[#0A1633] text-white">
+        <motion.a href="/legal/contact-us" {...rise()} className="group relative block min-h-[320px] sm:min-h-[460px] overflow-hidden bg-[#0A1633] text-white">
           <Image src={featured.img} alt={featured.title} fill className="object-cover opacity-55 transition-all duration-[900ms] ease-out group-hover:scale-[1.04] group-hover:opacity-60" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1633] via-[#0A1633]/50 to-transparent" />
 
@@ -83,7 +83,7 @@ export default function Page() {
       <section className="mx-auto w-full max-w-[1220px] px-5 sm:px-6 lg:px-8 pb-[100px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10">
           {items.map((v, i) => (
-            <motion.a href="#" key={v.title} {...rise(i)} className="group flex flex-col">
+            <motion.a href={v.href} key={v.title} {...rise(i)} className="group flex flex-col">
               <div className="relative mb-4 h-[200px] overflow-hidden bg-[#0A1633]">
                 <Image src={v.img} alt={v.title} fill className="object-cover opacity-85 transition-transform duration-[800ms] ease-out group-hover:scale-[1.05]" />
                 <span className="absolute inset-0 flex items-center justify-center">
