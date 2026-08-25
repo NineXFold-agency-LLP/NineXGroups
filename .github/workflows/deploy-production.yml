@@ -1,0 +1,96 @@
+name: Deploy NineXGroups to DigitalOcean
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "frontend/**"
+      - "deploy/**"
+      - ".github/workflows/deploy-production.yml"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+
+      - name: Zero-downtime deploy via SSH
+        run: |
+          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
+            set -euo pipefail
+
+            # Isolated from ninexhoomie: /root/apps/production is never touched.
+            APPS_ROOT=/root/apps
+            LIVE_DIR=$APPS_ROOT/ninexfold
+            RELEASE_DIR=$APPS_ROOT/ninexfold_new
+            OLD_DIR=$APPS_ROOT/ninexfold_old
+
+            if [ ! -d "$LIVE_DIR/.git" ]; then
+              echo "Live app missing at $LIVE_DIR — run deploy/bootstrap-server.sh first."
+              exit 1
+            fi
+
+            if [ "$(swapon --show | wc -l)" -eq 0 ]; then
+              echo "No swap found — provisioning 4G swapfile..."
+              fallocate -l 4G /swapfile 2>/dev/null || dd if=/dev/zero of=/swapfile bs=1M count=4096
+              chmod 600 /swapfile
+              mkswap /swapfile
+              swapon /swapfile
+              grep -q '^/swapfile' /etc/fstab || echo '/swapfile none swap sw 0 0' >> /etc/fstab
+            fi
+
+            git config --global --add safe.directory '*'
+
+            trap 'echo "Build failed — live ninexfold was never swapped, still serving old release."; rm -rf "$RELEASE_DIR"' ERR
+
+            echo "Building next release in $RELEASE_DIR while live keeps serving..."
+            rm -rf "$RELEASE_DIR"
+            git clone --local --dissociate "$LIVE_DIR" "$RELEASE_DIR"
+            cd "$RELEASE_DIR"
+            git remote set-url origin "$(git -C "$LIVE_DIR" remote get-url origin)"
+            git fetch origin main
+            git checkout main
+            git reset --hard origin/main
+
+            echo "Carrying over .env from live release..."
+            find "$LIVE_DIR/frontend" -maxdepth 1 -name ".env*" -exec cp {} "$RELEASE_DIR/frontend/" \; 2>/dev/null || true
+
+            cd "$RELEASE_DIR/frontend"
+            npm ci
+            NODE_OPTIONS=--max-old-space-size=2048 npm run build
+            cd "$RELEASE_DIR"
+
+            # Keep deploy scripts in sync for bootstrap/ecosystem path after swap
+            if [ -f "$RELEASE_DIR/deploy/nginx/ninexgroup.conf" ]; then
+              cp "$RELEASE_DIR/deploy/nginx/ninexgroup.conf" /etc/nginx/sites-available/ninexgroup
+              ln -sfn /etc/nginx/sites-available/ninexgroup /etc/nginx/sites-enabled/ninexgroup
+              nginx -t && systemctl reload nginx
+            fi
+
+            echo "Build succeeded — atomic swap to live..."
+            cd "$APPS_ROOT"
+            rm -rf "$OLD_DIR"
+            mv "$LIVE_DIR" "$OLD_DIR"
+            mv "$RELEASE_DIR" "$LIVE_DIR"
+
+            if pm2 describe ninexgroup-web >/dev/null 2>&1; then
+              pm2 reload ninexgroup-web
+            else
+              pm2 start "$LIVE_DIR/deploy/ecosystem.ninexgroup.config.js"
+            fi
+            pm2 save
+
+            echo "Cleaning previous release..."
+            rm -rf "$OLD_DIR"
+            echo "Deploy complete: $LIVE_DIR"
+          EOF
